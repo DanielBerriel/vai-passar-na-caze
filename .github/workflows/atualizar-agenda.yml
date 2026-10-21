@@ -2,8 +2,9 @@ name: Atualizar agenda
 
 on:
   schedule:
-    # A cada 3 horas (UTC). Minuto "quebrado" para fugir do pico de filas do GitHub.
-    - cron: "17 */3 * * *"
+    # A cada 6 horas: 03:17, 09:17, 15:17 e 21:17 em Brasília. Minuto "quebrado"
+    # para fugir do pico de filas do GitHub.
+    - cron: "17 */6 * * *"
   workflow_dispatch:
   push:
     branches: [main]

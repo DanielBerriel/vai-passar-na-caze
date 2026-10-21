@@ -13,6 +13,7 @@ import { fileURLToPath } from "node:url";
 import { scrapeCazeTVSchedule } from "./sources/futebolnatv.mjs";
 import { fetchMatches, normalizeMatch } from "./sources/football-data.mjs";
 import { reconcile } from "./match.mjs";
+import { loadCrestIndex, findCrest } from "./crests.mjs";
 import { buildCopy, copyKey } from "./copy.mjs";
 import { localDate, addDays } from "./lib/time.mjs";
 
@@ -20,6 +21,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA_DIR = process.env.PIPELINE_OUT_DIR ? path.resolve(process.env.PIPELINE_OUT_DIR) : path.join(ROOT, "data");
 const OUTPUT_FILE = path.join(DATA_DIR, "jogos.json");
 const CACHE_FILE = path.join(DATA_DIR, "copy-cache.json");
+const CREST_FILE = path.join(DATA_DIR, "crests.json");
 
 const KEEP_STARTED_FOR_MS = 3 * 60 * 60 * 1000;
 const CACHE_RETENTION_DAYS = 7;
@@ -145,6 +147,14 @@ export async function run({ now = new Date(), log = console.log } = {}) {
 
   log("2/4 Calendário oficial (API)");
   const fixtures = await loadFixtures({ today, log });
+  await fs.mkdir(DATA_DIR, { recursive: true });
+  const crestIndex = await loadCrestIndex({
+    file: CREST_FILE,
+    token: process.env.FOOTBALL_DATA_TOKEN,
+    fixtureTeams: fixtures.matches.flatMap((m) => [m.home, m.away]),
+    now,
+    log,
+  });
 
   log("3/4 Cruzamento guia x API");
   const { matched, guideOnly } = reconcile(guide.matches, fixtures.matches);
@@ -161,6 +171,11 @@ export async function run({ now = new Date(), log = console.log } = {}) {
       return t >= now.getTime() - KEEP_STARTED_FOR_MS && t <= horizonEnd;
     })
     .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
+
+  const teams = broadcasts.flatMap((b) => [b.home, b.away]);
+  for (const team of teams) team.crest ??= findCrest(team.name, crestIndex) ?? findCrest(team.fullName, crestIndex);
+  const withCrest = teams.filter((t) => t.crest).length;
+  log(`  escudos: ${withCrest}/${teams.length} times`);
 
   log("4/4 Chamadas (Claude)");
   const cache = await readJson(CACHE_FILE, {});
@@ -181,7 +196,7 @@ export async function run({ now = new Date(), log = console.log } = {}) {
     sources: {
       guide: { name: "futebolnatv.com.br", pages: guide.diagnostics },
       fixtures: { name: "football-data.org", status: fixtures.status, error: fixtures.error ?? null },
-      copy: { model: copyStats.model, error: copyStats.error },
+      copy: { model: copyStats.model, error: copyStats.error, usage: copyStats.usage },
     },
     stats: {
       guidePagesRead: guide.diagnostics.filter((d) => d.ok).length,
@@ -191,6 +206,8 @@ export async function run({ now = new Date(), log = console.log } = {}) {
       cazetvBroadcasts: broadcasts.length,
       reconciled: broadcasts.filter((b) => b.reconciliation.method === "api+guia").length,
       guideOnly: broadcasts.filter((b) => b.reconciliation.method === "guia").length,
+      teamsWithCrest: withCrest,
+      teamsShown: teams.length,
       copyByClaude: broadcasts.filter((b) => b.copy.source === "claude").length,
       copyNewThisRun: copyStats.generated,
       copyFromTemplate: copyStats.template,

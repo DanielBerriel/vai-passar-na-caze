@@ -11,6 +11,8 @@
 import Anthropic from "@anthropic-ai/sdk";
 
 export const MODEL = "claude-opus-5-5";
+// US$ per million tokens for MODEL (thinking tokens are billed as output).
+const PRICE_PER_MTOK = { input: 4, output: 20 };
 export const BADGES = ["CLÁSSICO", "JOGAÇO", "DUELO DE GIGANTES", "IMPERDÍVEL", "VALE O PLAY", "RODADA"];
 const MAX_COPY_LENGTH = 120;
 
@@ -142,7 +144,14 @@ export async function buildCopy(
   { apiKey = process.env.ANTHROPIC_API_KEY, clientOptions = {}, log = console.log } = {},
 ) {
   const missing = matches.filter((m) => !cache[copyKey(m)]);
-  const stats = { fromCache: matches.length - missing.length, generated: 0, template: 0, error: null, model: null };
+  const stats = {
+    fromCache: matches.length - missing.length,
+    generated: 0,
+    template: 0,
+    error: null,
+    model: null,
+    usage: null,
+  };
 
   if (missing.length && apiKey) {
     try {
@@ -167,7 +176,17 @@ export async function buildCopy(
         stats.generated++;
       }
       stats.model = model;
-      log(`  Claude (${model}): ${stats.generated}/${missing.length} chamadas, ${usage.input_tokens} tokens in / ${usage.output_tokens} out`);
+      const estimatedUsd =
+        (usage.input_tokens * PRICE_PER_MTOK.input + usage.output_tokens * PRICE_PER_MTOK.output) / 1e6;
+      stats.usage = {
+        inputTokens: usage.input_tokens,
+        outputTokens: usage.output_tokens,
+        estimatedUsd: Math.round(estimatedUsd * 10000) / 10000,
+      };
+      log(
+        `  Claude (${model}): ${stats.generated}/${missing.length} chamadas, ` +
+          `${usage.input_tokens} tokens in / ${usage.output_tokens} out, ~US$ ${estimatedUsd.toFixed(4)}`,
+      );
     } catch (err) {
       const kind =
         err instanceof Anthropic.AuthenticationError ? "chave inválida"

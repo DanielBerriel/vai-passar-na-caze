@@ -4,7 +4,7 @@
 
 **Ao vivo: [danielberriel.github.io/vai-passar-na-caze](https://danielberriel.github.io/vai-passar-na-caze/)**
 
-A página mostra a agenda das transmissões gratuitas da CazéTV com chamadas escritas por IA. Ninguém digita nada: a cada 3 horas, um pipeline descobre o que vai passar, confere em duas fontes, escreve as chamadas e publica.
+A página mostra a agenda das transmissões gratuitas da CazéTV com chamadas escritas por IA. Ninguém digita nada: a cada 6 horas, um pipeline descobre o que vai passar, confere em duas fontes, escreve as chamadas e publica.
 
 > Projeto conceitual e independente. Não é um site oficial da CazéTV e não tem afiliação com ela.
 
@@ -16,7 +16,7 @@ A página mostra a agenda das transmissões gratuitas da CazéTV com chamadas es
  football-data.org   ──── API ─────┘   o que é jogado (horário UTC, status, escudos)
 ```
 
-1. **Calendário oficial**: a API da football-data.org entrega jogos, horários, status, placar e escudos ([sources/football-data.mjs](pipeline/sources/football-data.mjs)).
+1. **Calendário oficial**: a API da football-data.org entrega jogos, horários, status, placar e escudos ([sources/football-data.mjs](pipeline/sources/football-data.mjs)). Jogos fora do plano grátis (Europa e Conference League) pegam o escudo de um índice semanal com os elencos das ligas cobertas ([crests.mjs](pipeline/crests.mjs)). Em caso de dúvida entre dois clubes, a página mostra as iniciais em vez de arriscar o escudo errado.
 2. **Quem transmite**: um scraper lê o guia futebolnatv.com.br ([sources/futebolnatv.mjs](pipeline/sources/futebolnatv.mjs)). Ele visita a página de direitos de transmissão da CazéTV e descobre sozinho quais campeonatos ler, então um contrato novo aparece sem mudar código.
 3. **Cruzamento**: as fontes nunca escrevem os times igual ("Bayern de Munique" e "FC Bayern München"; "Estac Troyes" e "ES Troyes AC"). Normalização, aliases, similaridade de Dice e uma janela de ±20 min no horário casam os jogos, com atribuição gulosa um-para-um para que dois jogos simultâneos da mesma liga não se confundam ([match.mjs](pipeline/match.mjs)).
 4. **Chamadas com IA**: o Claude (`claude-opus-5-5`) escreve uma chamada e um selo por jogo, na voz da marca, com saída em JSON Schema ([copy.mjs](pipeline/copy.mjs)). O prompt proíbe afirmar fatos da temporada (sequências, tabela, lesões) que o modelo não recebeu.
@@ -54,7 +54,7 @@ Variáveis de ambiente, todas opcionais. Localmente, `npm run dados` lê um arqu
 1. Crie um repositório público no GitHub e envie este projeto para a branch `main`.
 2. Em **Settings → Secrets and variables → Actions**, crie os secrets `FOOTBALL_DATA_TOKEN` e `ANTHROPIC_API_KEY`.
 3. Em **Settings → Pages**, escolha **Source: GitHub Actions**.
-4. Em **Actions → Atualizar agenda**, clique em **Run workflow**. Depois disso, ele roda sozinho a cada 3 horas.
+4. Em **Actions → Atualizar agenda**, clique em **Run workflow**. Depois disso, ele roda sozinho a cada 6 horas.
 5. Num fork, troque a URL do GitHub Pages em `og:url`, `og:image` e `canonical` no [index.html](index.html), e o `repoUrl` em [assets/app.js](assets/app.js).
 
 ## Estrutura
@@ -63,9 +63,11 @@ Variáveis de ambiente, todas opcionais. Localmente, `npm run dados` lê um arqu
 index.html, assets/        site estático (HTML/CSS/JS puros)
 data/jogos.json            snapshot publicado, gerado pelo pipeline
 data/copy-cache.json       chamadas já escritas pelo Claude
+data/crests.json           índice de escudos (renovado 1x por semana)
 pipeline/run.mjs           orquestração
 pipeline/sources/          football-data.org (API) e futebolnatv (scraping)
 pipeline/match.mjs         cruzamento entre as fontes
+pipeline/crests.mjs        escudos por nome para jogos fora da API
 pipeline/copy.mjs          chamadas com Claude + templates de fallback
 pipeline/test/             testes (node:test)
 ```

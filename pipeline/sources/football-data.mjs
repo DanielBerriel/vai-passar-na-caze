@@ -2,7 +2,7 @@
 // (fixtures, kickoff in UTC, status, score, team names and crests).
 // The API sends no CORS headers, so it can't be called from the browser;
 // that is one reason this pipeline exists.
-const API_URL = "https://api.football-data.org/v4/matches";
+const API_BASE = "https://api.football-data.org/v4";
 
 // Portuguese display names for the competitions in the free tier.
 const COMPETITION_NAMES = {
@@ -66,12 +66,21 @@ export function normalizeMatch(m) {
   };
 }
 
+async function getJson(path, token, fetchImpl) {
+  const res = await fetchImpl(`${API_BASE}${path}`, { headers: { "X-Auth-Token": token } });
+  if (res.status === 429) throw new Error("football-data.org: limite de requisições atingido (429)");
+  if (!res.ok) throw new Error(`football-data.org ${path.split("?")[0]} -> HTTP ${res.status}`);
+  return res.json();
+}
+
 /** Fetches every match in [dateFrom, dateTo] (max 10 days per the API). */
 export async function fetchMatches({ token, dateFrom, dateTo, fetchImpl = fetch }) {
-  const url = `${API_URL}?dateFrom=${dateFrom}&dateTo=${dateTo}`;
-  const res = await fetchImpl(url, { headers: { "X-Auth-Token": token } });
-  if (res.status === 429) throw new Error("football-data.org: limite de requisições atingido (429)");
-  if (!res.ok) throw new Error(`football-data.org -> HTTP ${res.status}`);
-  const body = await res.json();
+  const body = await getJson(`/matches?dateFrom=${dateFrom}&dateTo=${dateTo}`, token, fetchImpl);
   return (body.matches ?? []).filter((m) => m.homeTeam?.name && m.awayTeam?.name).map(normalizeMatch);
+}
+
+/** Every team of a competition's current season, with its crest. */
+export async function fetchTeams({ token, competition, fetchImpl = fetch }) {
+  const body = await getJson(`/competitions/${competition}/teams`, token, fetchImpl);
+  return (body.teams ?? []).filter((t) => t.name && t.crest).map(team);
 }

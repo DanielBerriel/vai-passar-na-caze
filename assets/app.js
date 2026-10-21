@@ -167,7 +167,7 @@ function renderFeatured(list, now) {
   const el = $("#featured");
   const pick = pickFeatured(list, now);
   if (!pick) {
-    el.innerHTML = `<div class="empty"><strong>Intervalo na agenda</strong>Nenhum jogo da Cazé confirmado nos próximos dias. O robô confere de novo em até 3 horas.</div>`;
+    el.innerHTML = `<div class="empty"><strong>Intervalo na agenda</strong>Nenhum jogo da Cazé confirmado nos próximos dias. O robô confere de novo em até 6 horas.</div>`;
     return;
   }
   const { b, label, live } = pick;

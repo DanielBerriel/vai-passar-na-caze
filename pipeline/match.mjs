@@ -21,6 +21,7 @@ const ALIASES = new Map([
   ["colonia", "koln"],
   ["hamburgo", "hamburger"],
   ["marselha", "marseille"],
+  ["rennes", "stade rennais"],
   ["olympique marselha", "marseille"],
   ["psg", "paris saint germain"],
   ["atletico madri", "atletico madrid"],
