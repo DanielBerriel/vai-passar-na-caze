@@ -112,7 +112,6 @@ function toBroadcast({ guide, api, confidence }) {
       // Brazilian names from the guide ("Bayern de Munique"), crests from the API.
       home: { ...api.home, name: guideTeam(guide.home).name },
       away: { ...api.away, name: guideTeam(guide.away).name },
-      score: api.score,
       guideUrl: guide.url,
       reconciliation: { method: "api+guia", confidence },
     };
@@ -125,7 +124,6 @@ function toBroadcast({ guide, api, confidence }) {
     stage: guideStage(guide.stage),
     home: guideTeam(guide.home),
     away: guideTeam(guide.away),
-    score: { home: null, away: null },
     guideUrl: guide.url,
     reconciliation: { method: "guia" },
   };

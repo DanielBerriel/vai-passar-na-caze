@@ -101,10 +101,12 @@ function competitionColor(comp) {
   return COMPETITION_COLORS[comp.code] ?? `hsl(${hue(comp.name)} 70% 65%)`;
 }
 
-/** "live" | "done" | "off" | "upcoming", from API status when known, else from the clock. */
+/**
+ * "live" | "done" | "off" | "upcoming". The data is a once-a-day snapshot, so an
+ * API status like "in play" would be stale within minutes: only durable facts
+ * (postponed, cancelled) come from the API, everything else from the clock.
+ */
 function matchState(b, now) {
-  if (b.status === "IN_PLAY" || b.status === "PAUSED") return "live";
-  if (b.status === "FINISHED" || b.status === "AWARDED") return "done";
   if (b.status === "POSTPONED" || b.status === "CANCELLED" || b.status === "SUSPENDED") return "off";
   const start = Date.parse(b.kickoff);
   if (now.getTime() < start) return "upcoming";
@@ -173,10 +175,7 @@ function renderFeatured(list, now) {
     return;
   }
   const { b, label, live } = pick;
-  const hasScore = b.score.home !== null && b.score.away !== null;
-  const mid = live && hasScore
-    ? `<span class="versus-score">${b.score.home}–${b.score.away}</span>`
-    : `<span class="versus-time">${timeOf(b.kickoff)}</span><span class="versus-day">${esc(shortDay(b.kickoff, now))}</span>`;
+  const mid = `<span class="versus-time">${timeOf(b.kickoff)}</span><span class="versus-day">${esc(shortDay(b.kickoff, now))}</span>`;
 
   el.innerHTML = `
     <div class="featured-top">
@@ -219,14 +218,13 @@ function renderFilters(list) {
 
 function matchCard(b, now) {
   const state = matchState(b, now);
-  const hasScore = b.score.home !== null && b.score.away !== null && state !== "upcoming";
   const badge =
     state === "live" ? '<span class="badge is-live">Ao vivo</span>'
     : state === "done" ? '<span class="badge is-done">Encerrado</span>'
     : state === "off" ? '<span class="badge is-done">Adiado</span>'
     : `<span class="badge">${esc(b.copy.badge)}</span>`;
-  const team = (t, score) => `
-    <div class="team-row">${crest(t)}<span class="team-name">${esc(t.name)}</span>${hasScore ? `<span class="team-score">${score}</span>` : ""}</div>`;
+  const team = (t) => `
+    <div class="team-row">${crest(t)}<span class="team-name">${esc(t.name)}</span></div>`;
 
   return `
     <article class="match ${state === "live" ? "is-live" : ""} ${state === "done" || state === "off" ? "is-done" : ""}" style="--c:${competitionColor(b.competition)}">
@@ -236,7 +234,7 @@ function matchCard(b, now) {
           <span class="match-comp"><strong>${esc(b.competition.name)}</strong>${b.stage ? ` · ${esc(b.stage)}` : ""}</span>
           ${badge}
         </div>
-        <div class="match-teams">${team(b.home, b.score.home)}${team(b.away, b.score.away)}</div>
+        <div class="match-teams">${team(b.home)}${team(b.away)}</div>
         <p class="match-copy">${esc(b.copy.text)}</p>
         <div class="match-actions">${actions(b, now, { compact: true })}</div>
       </div>

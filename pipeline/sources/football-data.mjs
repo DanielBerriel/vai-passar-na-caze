@@ -1,5 +1,5 @@
 // football-data.org v4: the source of truth for *what* is played and *when*
-// (fixtures, kickoff in UTC, status, score, team names and crests).
+// (fixtures, kickoff in UTC, status, team names and crests).
 // The API sends no CORS headers, so it can't be called from the browser;
 // that is one reason this pipeline exists.
 const API_BASE = "https://api.football-data.org/v4";
@@ -59,10 +59,7 @@ export function normalizeMatch(m) {
     stage: stageLabel(m),
     home: team(m.homeTeam),
     away: team(m.awayTeam),
-    score: {
-      home: m.score?.fullTime?.home ?? null,
-      away: m.score?.fullTime?.away ?? null,
-    },
+    // No score: the page is refreshed once a day, so any score would be stale.
   };
 }
 
