@@ -134,6 +134,29 @@
           </li>
         </ol>
 
+        <div class="cost-callout">
+          <div class="cost-copy">
+            <p class="kicker">A decisão que deixa o custo perto de zero</p>
+            <h3>O que muda a cada minuto roda no navegador. O resto, uma vez por dia.</h3>
+            <p>
+              "Hoje", "Amanhã", "próximo jogo", "ao vivo" e a contagem regressiva são calculados no navegador de quem abre
+              a página, a partir dos horários que o robô já deixou salvos para os próximos dias. Por isso ele não precisa
+              rodar toda hora: roda uma vez por dia, só para descobrir jogos novos e mudanças de horário. E a IA só escreve
+              para o jogo que ainda não tem chamada; o resto vem do cache.
+            </p>
+            <p>
+              O resultado é que o custo não cresce com a audiência: 10 ou 10 mil pessoas abrindo a página custam exatamente o mesmo.
+            </p>
+            <p class="cost-live" data-metric="cost" hidden></p>
+          </div>
+          <ul class="cost-facts">
+            <li><strong>1x</strong><span>por dia o robô roda</span></li>
+            <li><strong>0</strong><span>chamadas de API quando alguém abre a página</span></li>
+            <li><strong>≤ 1</strong><span>chamada à IA por dia, só para jogos novos</span></li>
+            <li><strong>R$ 0</strong><span>de servidor e banco de dados</span></li>
+          </ul>
+        </div>
+
         <div class="decisions">
           <h3 class="decisions-title">Decisões que fazem diferença em produção</h3>
           <ul>
@@ -146,8 +169,8 @@
               O modelo só usa os fatos que recebe: nada de sequência de vitórias, desfalques ou tabela inventados com a marca em cima.
             </li>
             <li>
-              <strong>Custo sob controle.</strong>
-              No máximo uma chamada ao modelo por dia, só para jogos novos. O resto vem do cache: centavos por mês.
+              <strong>Escudo certo ou nenhum.</strong>
+              Quando dois clubes têm nomes parecidos, a página mostra as iniciais em vez de arriscar o escudo errado na frente do torcedor.
             </li>
             <li>
               <strong>Robô educado.</strong>
@@ -205,8 +228,15 @@
       <div class="container contact-inner">
         <p class="kicker">Contato</p>
         <h2 class="display" id="contato-title">Bora <span class="hl">conversar?</span></h2>
+        <div class="contact-id">
+          <span class="contact-avatar" aria-hidden="true">DB</span>
+          <span class="contact-id-text">
+            <strong>Daniel Berriel</strong>
+            <span>Formado em Análise e Desenvolvimento de Sistemas</span>
+          </span>
+        </div>
         <p class="lead">
-          Eu sou Daniel Berriel e quero construir esse tipo de coisa com a LiveMode.
+          Quero construir esse tipo de coisa com a LiveMode.
           Se esta página te deu alguma ideia, me chama.
         </p>
         <a class="contact-email" id="contact-email" href="mailto:danielberriel163@gmail.com">danielberriel163@gmail.com</a>

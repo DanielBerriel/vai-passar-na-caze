@@ -307,6 +307,24 @@ function renderPipeline(data, now) {
     if (el) el.innerHTML = html;
   }
   $("#updated-at").textContent = `atualizado ${relativeTime(data.generatedAt, now)}`;
+  renderCost(data);
+}
+
+/** Measured cost of the last run, straight from the data file; hidden until the AI has run. */
+function renderCost(data) {
+  const el = document.querySelector('[data-metric="cost"]');
+  if (!el) return;
+  const usage = data.sources.copy?.usage;
+  const games = data.stats.copyNewThisRun;
+  if (usage) {
+    const usd = usage.estimatedUsd.toLocaleString("pt-BR", { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    el.textContent =
+      `Medido na última execução: 1 chamada ao Claude para ${games} ${games === 1 ? "jogo novo" : "jogos novos"}, ` +
+      `${(usage.inputTokens + usage.outputTokens).toLocaleString("pt-BR")} tokens, cerca de US$ ${usd}.`;
+  } else if (data.stats.copyByClaude > 0) {
+    el.textContent = "Medido na última execução: nenhuma chamada à IA. Todas as chamadas vieram do cache, custo US$ 0.";
+  }
+  el.hidden = !el.textContent;
 }
 
 // ---------- Contact ----------
