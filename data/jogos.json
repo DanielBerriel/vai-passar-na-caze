@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T14:08:10.901Z",
+  "generatedAt": "2026-10-21T14:38:02.551Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -111,56 +111,60 @@
     },
     "fixtures": {
       "name": "football-data.org",
-      "status": "sem-token",
+      "status": "ok",
       "error": null
     },
     "copy": {
       "model": null,
-      "error": null
+      "error": "API 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CgFZ4KCbGy9kQnuN21nc1\"}",
+      "usage": null
     }
   },
   "stats": {
     "guidePagesRead": 17,
     "leaguesScanned": 13,
     "guideMatchesRead": 103,
-    "apiMatchesRead": 0,
+    "apiMatchesRead": 121,
     "cazetvBroadcasts": 26,
-    "reconciled": 0,
-    "guideOnly": 26,
+    "reconciled": 20,
+    "guideOnly": 6,
+    "teamsWithCrest": 50,
+    "teamsShown": 52,
     "copyByClaude": 0,
     "copyNewThisRun": 0,
     "copyFromTemplate": 26
   },
   "broadcasts": [
     {
-      "id": "fntv-levante-x-athletic-club-709c107808d7",
+      "id": "fd-564685",
       "kickoff": "2026-10-21T18:00:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "PD",
-        "name": "LaLiga"
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "stage": "Rodada 6",
       "home": {
         "name": "Levante",
-        "fullName": "Levante",
-        "tla": null,
-        "crest": null
+        "fullName": "Levante UD",
+        "tla": "LEV",
+        "crest": "https://crests.football-data.org/88.png"
       },
       "away": {
         "name": "Athletic Club",
         "fullName": "Athletic Club",
-        "tla": null,
-        "crest": null
+        "tla": "ATH",
+        "crest": "https://crests.football-data.org/77.png"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/levante-x-athletic-club-709c107808d7.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Levante x Athletic Club, LaLiga. Bola rolando de graça, é só dar o play.",
@@ -218,13 +222,13 @@
         "name": "Juventus",
         "fullName": "Juventus",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/109.png"
       },
       "away": {
         "name": "Rennes",
         "fullName": "Rennes",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/529.png"
       },
       "score": {
         "home": null,
@@ -254,13 +258,13 @@
         "name": "Bournemouth",
         "fullName": "Bournemouth",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/bournemouth.png"
       },
       "away": {
         "name": "AC Milan",
         "fullName": "AC Milan",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/98.png"
       },
       "score": {
         "home": null,
@@ -290,13 +294,13 @@
         "name": "Monaco",
         "fullName": "Monaco",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/548.png"
       },
       "away": {
         "name": "SC Freiburg",
         "fullName": "SC Freiburg",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/17.png"
       },
       "score": {
         "home": null,
@@ -313,26 +317,26 @@
       }
     },
     {
-      "id": "fntv-vfb-stuttgart-x-borussia-m-a5430cb1f43e",
+      "id": "fd-565833",
       "kickoff": "2026-10-23T18:30:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "BL1",
-        "name": "Bundesliga"
+        "name": "Bundesliga",
+        "emblem": "https://crests.football-data.org/BL1.png"
       },
       "stage": "Rodada 7",
       "home": {
         "name": "VfB Stuttgart",
         "fullName": "VfB Stuttgart",
-        "tla": null,
-        "crest": null
+        "tla": "VFB",
+        "crest": "https://crests.football-data.org/10.png"
       },
       "away": {
         "name": "Borussia M'gladbach",
-        "fullName": "Borussia M'gladbach",
-        "tla": null,
-        "crest": null
+        "fullName": "Borussia Mönchengladbach",
+        "tla": "BMG",
+        "crest": "https://crests.football-data.org/18.png"
       },
       "score": {
         "home": null,
@@ -340,7 +344,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/vfb-stuttgart-x-borussia-m-a5430cb1f43e.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Marca no calendário: VfB Stuttgart x Borussia M'gladbach, Bundesliga ao vivo na CazéTV.",
@@ -349,26 +354,26 @@
       }
     },
     {
-      "id": "fntv-alaves-x-malaga-2a1ee54772ec",
+      "id": "fd-564719",
       "kickoff": "2026-10-23T19:00:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "PD",
-        "name": "LaLiga"
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "stage": "Rodada 10",
       "home": {
         "name": "Alavés",
-        "fullName": "Alavés",
-        "tla": null,
-        "crest": null
+        "fullName": "Deportivo Alavés",
+        "tla": "ALA",
+        "crest": "https://crests.football-data.org/263.png"
       },
       "away": {
         "name": "Malaga",
-        "fullName": "Malaga",
-        "tla": null,
-        "crest": null
+        "fullName": "Málaga CF",
+        "tla": "MAL",
+        "crest": "https://crests.football-data.org/84.png"
       },
       "score": {
         "home": null,
@@ -376,7 +381,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/alaves-x-malaga-2a1ee54772ec.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Alavés recebe Malaga e você assiste com a gente, sem pagar nada.",
@@ -385,26 +391,26 @@
       }
     },
     {
-      "id": "fntv-rayo-vallecano-x-elche-69cec33c6816",
+      "id": "fd-564718",
       "kickoff": "2026-10-24T12:00:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "PD",
-        "name": "LaLiga"
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "stage": "Rodada 10",
       "home": {
         "name": "Rayo Vallecano",
-        "fullName": "Rayo Vallecano",
-        "tla": null,
-        "crest": null
+        "fullName": "Rayo Vallecano de Madrid",
+        "tla": "RAY",
+        "crest": "https://crests.football-data.org/87.png"
       },
       "away": {
         "name": "Elche",
-        "fullName": "Elche",
-        "tla": null,
-        "crest": null
+        "fullName": "Elche CF",
+        "tla": "ELC",
+        "crest": "https://crests.football-data.org/285.png"
       },
       "score": {
         "home": null,
@@ -412,7 +418,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/rayo-vallecano-x-elche-69cec33c6816.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Tem LaLiga na faixa! Rayo Vallecano x Elche, ao vivo no YouTube.",
@@ -421,26 +428,26 @@
       }
     },
     {
-      "id": "fntv-rb-leipzig-x-sv-elversberg-d7b975a4d8a1",
+      "id": "fd-565832",
       "kickoff": "2026-10-24T13:30:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "BL1",
-        "name": "Bundesliga"
+        "name": "Bundesliga",
+        "emblem": "https://crests.football-data.org/BL1.png"
       },
       "stage": "Rodada 7",
       "home": {
         "name": "RB Leipzig",
         "fullName": "RB Leipzig",
-        "tla": null,
-        "crest": null
+        "tla": "RBL",
+        "crest": "https://crests.football-data.org/721.png"
       },
       "away": {
         "name": "SV Elversberg",
-        "fullName": "SV Elversberg",
-        "tla": null,
-        "crest": null
+        "fullName": "SV 07 Elversberg",
+        "tla": "ELV",
+        "crest": "https://crests.football-data.org/719.png"
       },
       "score": {
         "home": null,
@@ -448,7 +455,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/rb-leipzig-x-sv-elversberg-d7b975a4d8a1.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Separa o lanche: RB Leipzig e SV Elversberg se enfrentam e a Cazé transmite ao vivo.",
@@ -457,26 +465,26 @@
       }
     },
     {
-      "id": "fntv-racing-santander-x-espanyol-dfc3bff49f28",
+      "id": "fd-564727",
       "kickoff": "2026-10-24T14:15:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "PD",
-        "name": "LaLiga"
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "stage": "Rodada 10",
       "home": {
         "name": "Racing Santander",
-        "fullName": "Racing Santander",
-        "tla": null,
-        "crest": null
+        "fullName": "Real Racing Club de Santander",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/5335.png"
       },
       "away": {
         "name": "Espanyol",
-        "fullName": "Espanyol",
-        "tla": null,
-        "crest": null
+        "fullName": "RCD Espanyol de Barcelona",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/80.png"
       },
       "score": {
         "home": null,
@@ -484,7 +492,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/racing-santander-x-espanyol-dfc3bff49f28.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 0.95
       },
       "copy": {
         "text": "Racing Santander x Espanyol, LaLiga. Bola rolando de graça, é só dar o play.",
@@ -506,13 +515,13 @@
         "name": "Toulouse",
         "fullName": "Toulouse",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/511.png"
       },
       "away": {
         "name": "Estac Troyes",
         "fullName": "Estac Troyes",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/531.png"
       },
       "score": {
         "home": null,
@@ -529,26 +538,26 @@
       }
     },
     {
-      "id": "fntv-valencia-x-villarreal-59429ce46c7b",
+      "id": "fd-564722",
       "kickoff": "2026-10-24T16:30:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "PD",
-        "name": "LaLiga"
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "stage": "Rodada 10",
       "home": {
         "name": "Valencia",
-        "fullName": "Valencia",
-        "tla": null,
-        "crest": null
+        "fullName": "Valencia CF",
+        "tla": "VAL",
+        "crest": "https://crests.football-data.org/95.png"
       },
       "away": {
         "name": "Villarreal",
-        "fullName": "Villarreal",
-        "tla": null,
-        "crest": null
+        "fullName": "Villarreal CF",
+        "tla": "VIL",
+        "crest": "https://crests.football-data.org/94.png"
       },
       "score": {
         "home": null,
@@ -556,7 +565,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/valencia-x-villarreal-59429ce46c7b.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Valencia recebe Villarreal e você assiste com a gente, sem pagar nada.",
@@ -565,26 +575,26 @@
       }
     },
     {
-      "id": "fntv-lens-x-paris-fc-7e3641cf1208",
+      "id": "fd-559652",
       "kickoff": "2026-10-24T18:45:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "FL1",
-        "name": "Ligue 1"
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
       "stage": "Rodada 8",
       "home": {
         "name": "Lens",
-        "fullName": "Lens",
-        "tla": null,
-        "crest": null
+        "fullName": "Racing Club de Lens",
+        "tla": "RCL",
+        "crest": "https://crests.football-data.org/546.png"
       },
       "away": {
         "name": "Paris FC",
         "fullName": "Paris FC",
-        "tla": null,
-        "crest": null
+        "tla": "PFC",
+        "crest": "https://crests.football-data.org/1045.png"
       },
       "score": {
         "home": null,
@@ -592,7 +602,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/lens-x-paris-fc-7e3641cf1208.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Lens recebe Paris FC e você assiste com a gente, sem pagar nada.",
@@ -601,26 +612,26 @@
       }
     },
     {
-      "id": "fntv-atletico-madrid-x-deportivo-la-coruna-d7917b12ae28",
+      "id": "fd-564724",
       "kickoff": "2026-10-24T19:00:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "PD",
-        "name": "LaLiga"
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "stage": "Rodada 10",
       "home": {
         "name": "Atletico Madrid",
-        "fullName": "Atletico Madrid",
-        "tla": null,
-        "crest": null
+        "fullName": "Club Atlético de Madrid",
+        "tla": "ATL",
+        "crest": "https://crests.football-data.org/78.png"
       },
       "away": {
         "name": "Deportivo La Coruna",
-        "fullName": "Deportivo La Coruna",
-        "tla": null,
-        "crest": null
+        "fullName": "RC Deportivo La Coruña",
+        "tla": "DEP",
+        "crest": "https://crests.football-data.org/560.png"
       },
       "score": {
         "home": null,
@@ -628,7 +639,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/atletico-madrid-x-deportivo-la-coruna-d7917b12ae28.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Marca no calendário: Atletico Madrid x Deportivo La Coruna, LaLiga ao vivo na CazéTV.",
@@ -637,26 +649,26 @@
       }
     },
     {
-      "id": "fntv-vasco-x-corinthians-696cf33da596d",
+      "id": "fd-555058",
       "kickoff": "2026-10-24T21:30:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "BSA",
-        "name": "Brasileirão"
+        "name": "Brasileirão",
+        "emblem": "https://crests.football-data.org/bsa.png"
       },
       "stage": "Rodada 32",
       "home": {
         "name": "Vasco",
-        "fullName": "Vasco",
-        "tla": null,
-        "crest": null
+        "fullName": "CR Vasco da Gama",
+        "tla": "VAS",
+        "crest": "https://crests.football-data.org/1780.png"
       },
       "away": {
         "name": "Corinthians",
-        "fullName": "Corinthians",
-        "tla": null,
-        "crest": null
+        "fullName": "SC Corinthians Paulista",
+        "tla": "COR",
+        "crest": "https://crests.football-data.org/1779.png"
       },
       "score": {
         "home": null,
@@ -664,7 +676,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/vasco-x-corinthians-696cf33da596d.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Marca no calendário: Vasco x Corinthians, Brasileirão ao vivo na CazéTV.",
@@ -673,26 +686,26 @@
       }
     },
     {
-      "id": "fntv-monaco-x-lille-050e25a82980",
+      "id": "fd-559650",
       "kickoff": "2026-10-25T14:00:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "FL1",
-        "name": "Ligue 1"
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
       "stage": "Rodada 8",
       "home": {
         "name": "Monaco",
-        "fullName": "Monaco",
-        "tla": null,
-        "crest": null
+        "fullName": "AS Monaco FC",
+        "tla": "ASM",
+        "crest": "https://crests.football-data.org/548.png"
       },
       "away": {
         "name": "Lille",
-        "fullName": "Lille",
-        "tla": null,
-        "crest": null
+        "fullName": "Lille OSC",
+        "tla": "LIL",
+        "crest": "https://crests.football-data.org/521.png"
       },
       "score": {
         "home": null,
@@ -700,7 +713,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/monaco-x-lille-050e25a82980.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Marca no calendário: Monaco x Lille, Ligue 1 ao vivo na CazéTV.",
@@ -709,26 +723,26 @@
       }
     },
     {
-      "id": "fntv-manchester-united-x-bournemouth-9293dc5f345a",
+      "id": "fd-560615",
       "kickoff": "2026-10-25T14:00:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "PL",
-        "name": "Premier League"
+        "name": "Premier League",
+        "emblem": "https://crests.football-data.org/PL.png"
       },
       "stage": "Rodada 8",
       "home": {
         "name": "Manchester United",
-        "fullName": "Manchester United",
-        "tla": null,
-        "crest": null
+        "fullName": "Manchester United FC",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
       },
       "away": {
         "name": "Bournemouth",
-        "fullName": "Bournemouth",
-        "tla": null,
-        "crest": null
+        "fullName": "AFC Bournemouth",
+        "tla": "BOU",
+        "crest": "https://crests.football-data.org/bournemouth.png"
       },
       "score": {
         "home": null,
@@ -736,7 +750,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/manchester-united-x-bournemouth-9293dc5f345a.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Manchester United x Bournemouth, Premier League. Bola rolando de graça, é só dar o play.",
@@ -745,26 +760,26 @@
       }
     },
     {
-      "id": "fntv-celta-vigo-x-real-betis-f03706f40bd1",
+      "id": "fd-564725",
       "kickoff": "2026-10-25T15:15:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "PD",
-        "name": "LaLiga"
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "stage": "Rodada 10",
       "home": {
         "name": "Celta Vigo",
-        "fullName": "Celta Vigo",
-        "tla": null,
-        "crest": null
+        "fullName": "RC Celta de Vigo",
+        "tla": "CEL",
+        "crest": "https://crests.football-data.org/558.png"
       },
       "away": {
         "name": "Real Betis",
-        "fullName": "Real Betis",
-        "tla": null,
-        "crest": null
+        "fullName": "Real Betis Balompié",
+        "tla": "BET",
+        "crest": "https://crests.football-data.org/90.png"
       },
       "score": {
         "home": null,
@@ -772,7 +787,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/celta-vigo-x-real-betis-f03706f40bd1.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Marca no calendário: Celta Vigo x Real Betis, LaLiga ao vivo na CazéTV.",
@@ -781,62 +797,26 @@
       }
     },
     {
-      "id": "fntv-angers-x-lorient-eb6e5dfba533",
+      "id": "fd-559649",
       "kickoff": "2026-10-25T16:15:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "FL1",
-        "name": "Ligue 1"
-      },
-      "stage": "Rodada 8",
-      "home": {
-        "name": "Angers",
-        "fullName": "Angers",
-        "tla": null,
-        "crest": null
-      },
-      "away": {
-        "name": "Lorient",
-        "fullName": "Lorient",
-        "tla": null,
-        "crest": null
-      },
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/angers-x-lorient-eb6e5dfba533.html",
-      "reconciliation": {
-        "method": "guia"
-      },
-      "copy": {
-        "text": "Marca no calendário: Angers x Lorient, Ligue 1 ao vivo na CazéTV.",
-        "badge": "VALE O PLAY",
-        "source": "template"
-      }
-    },
-    {
-      "id": "fntv-marseille-x-le-havre-ea89cd7c23ea",
-      "kickoff": "2026-10-25T16:15:00.000Z",
-      "status": null,
-      "competition": {
-        "emblem": null,
-        "code": "FL1",
-        "name": "Ligue 1"
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
       "stage": "Rodada 8",
       "home": {
         "name": "Marseille",
-        "fullName": "Marseille",
-        "tla": null,
-        "crest": null
+        "fullName": "Olympique de Marseille",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/516.png"
       },
       "away": {
         "name": "Le Havre",
-        "fullName": "Le Havre",
-        "tla": null,
-        "crest": null
+        "fullName": "Le Havre AC",
+        "tla": "HAC",
+        "crest": "https://crests.football-data.org/533.png"
       },
       "score": {
         "home": null,
@@ -844,7 +824,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/marseille-x-le-havre-ea89cd7c23ea.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Marseille x Le Havre, Ligue 1. Bola rolando de graça, é só dar o play.",
@@ -853,26 +834,26 @@
       }
     },
     {
-      "id": "fntv-rennes-x-strasbourg-98c3d034a4bf",
+      "id": "fd-559651",
       "kickoff": "2026-10-25T16:15:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "FL1",
-        "name": "Ligue 1"
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
       "stage": "Rodada 8",
       "home": {
         "name": "Rennes",
-        "fullName": "Rennes",
-        "tla": null,
-        "crest": null
+        "fullName": "Stade Rennais FC 1901",
+        "tla": "REN",
+        "crest": "https://crests.football-data.org/529.png"
       },
       "away": {
         "name": "Strasbourg",
-        "fullName": "Strasbourg",
-        "tla": null,
-        "crest": null
+        "fullName": "RC Strasbourg Alsace",
+        "tla": "RC ",
+        "crest": "https://crests.football-data.org/576.png"
       },
       "score": {
         "home": null,
@@ -880,7 +861,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/rennes-x-strasbourg-98c3d034a4bf.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Rennes recebe Strasbourg e você assiste com a gente, sem pagar nada.",
@@ -889,26 +871,26 @@
       }
     },
     {
-      "id": "fntv-auxerre-x-le-mans-8073b9a7d5bf",
+      "id": "fd-559656",
       "kickoff": "2026-10-25T16:15:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "FL1",
-        "name": "Ligue 1"
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
       "stage": "Rodada 8",
       "home": {
         "name": "Auxerre",
-        "fullName": "Auxerre",
-        "tla": null,
-        "crest": null
+        "fullName": "AJ Auxerre",
+        "tla": "AJA",
+        "crest": "https://crests.football-data.org/519.png"
       },
       "away": {
         "name": "Le Mans",
-        "fullName": "Le Mans",
-        "tla": null,
-        "crest": null
+        "fullName": "Le Mans FC",
+        "tla": "LMF",
+        "crest": "https://crests.football-data.org/535.png"
       },
       "score": {
         "home": null,
@@ -916,7 +898,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/auxerre-x-le-mans-8073b9a7d5bf.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Tem Ligue 1 na faixa! Auxerre x Le Mans, ao vivo no YouTube.",
@@ -925,26 +908,63 @@
       }
     },
     {
-      "id": "fntv-real-sociedad-x-levante-b543006ebb62",
-      "kickoff": "2026-10-25T17:30:00.000Z",
-      "status": null,
+      "id": "fd-559653",
+      "kickoff": "2026-10-25T16:15:00.000Z",
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
+        "code": "FL1",
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "stage": "Rodada 8",
+      "home": {
+        "name": "Angers",
+        "fullName": "Angers SCO",
+        "tla": "ANG",
+        "crest": "https://crests.football-data.org/532.png"
+      },
+      "away": {
+        "name": "Lorient",
+        "fullName": "FC Lorient",
+        "tla": "FCL",
+        "crest": "https://crests.football-data.org/525.png"
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/angers-x-lorient-eb6e5dfba533.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 0.95
+      },
+      "copy": {
+        "text": "Marca no calendário: Angers x Lorient, Ligue 1 ao vivo na CazéTV.",
+        "badge": "VALE O PLAY",
+        "source": "template"
+      }
+    },
+    {
+      "id": "fd-564726",
+      "kickoff": "2026-10-25T17:30:00.000Z",
+      "status": "TIMED",
+      "competition": {
         "code": "PD",
-        "name": "LaLiga"
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "stage": "Rodada 10",
       "home": {
         "name": "Real Sociedad",
-        "fullName": "Real Sociedad",
-        "tla": null,
-        "crest": null
+        "fullName": "Real Sociedad de Fútbol",
+        "tla": "RSO",
+        "crest": "https://crests.football-data.org/92.png"
       },
       "away": {
         "name": "Levante",
-        "fullName": "Levante",
-        "tla": null,
-        "crest": null
+        "fullName": "Levante UD",
+        "tla": "LEV",
+        "crest": "https://crests.football-data.org/88.png"
       },
       "score": {
         "home": null,
@@ -952,7 +972,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/real-sociedad-x-levante-b543006ebb62.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Separa o lanche: Real Sociedad e Levante se enfrentam e a Cazé transmite ao vivo.",
@@ -961,26 +982,26 @@
       }
     },
     {
-      "id": "fntv-psg-x-lyon-16d838a49afa",
+      "id": "fd-559648",
       "kickoff": "2026-10-25T19:45:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "FL1",
-        "name": "Ligue 1"
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
       "stage": "Rodada 8",
       "home": {
         "name": "PSG",
-        "fullName": "PSG",
-        "tla": null,
-        "crest": null
+        "fullName": "Paris Saint-Germain FC",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
       },
       "away": {
         "name": "Lyon",
-        "fullName": "Lyon",
-        "tla": null,
-        "crest": null
+        "fullName": "Olympique Lyonnais",
+        "tla": "LYO",
+        "crest": "https://crests.football-data.org/523.png"
       },
       "score": {
         "home": null,
@@ -988,7 +1009,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/psg-x-lyon-16d838a49afa.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 0.95
       },
       "copy": {
         "text": "Tem Ligue 1 na faixa! PSG x Lyon, ao vivo no YouTube.",
@@ -997,26 +1019,26 @@
       }
     },
     {
-      "id": "fntv-barcelona-x-real-madrid-1b21a85dcf7f",
+      "id": "fd-564723",
       "kickoff": "2026-10-25T20:00:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "PD",
-        "name": "LaLiga"
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "stage": "Rodada 10",
       "home": {
         "name": "Barcelona",
-        "fullName": "Barcelona",
-        "tla": null,
-        "crest": null
+        "fullName": "FC Barcelona",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/81.png"
       },
       "away": {
         "name": "Real Madrid",
-        "fullName": "Real Madrid",
-        "tla": null,
-        "crest": null
+        "fullName": "Real Madrid CF",
+        "tla": "RMA",
+        "crest": "https://crests.football-data.org/86.png"
       },
       "score": {
         "home": null,
@@ -1024,7 +1046,8 @@
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/barcelona-x-real-madrid-1b21a85dcf7f.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Barcelona recebe Real Madrid e você assiste com a gente, sem pagar nada.",
@@ -1046,13 +1069,13 @@
         "name": "Le Havre",
         "fullName": "Le Havre",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/533.png"
       },
       "away": {
         "name": "PSG",
         "fullName": "PSG",
         "tla": null,
-        "crest": null
+        "crest": "https://crests.football-data.org/524.png"
       },
       "score": {
         "home": null,

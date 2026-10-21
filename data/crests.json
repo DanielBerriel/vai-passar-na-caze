@@ -1,0 +1,800 @@
+{
+  "updatedAt": "2026-10-21T14:38:02.551Z",
+  "competitions": [
+    "PL",
+    "PD",
+    "SA",
+    "BL1",
+    "FL1",
+    "BSA",
+    "CL"
+  ],
+  "teams": [
+    {
+      "name": "Arsenal",
+      "fullName": "Arsenal FC",
+      "tla": "ARS",
+      "crest": "https://crests.football-data.org/57.png"
+    },
+    {
+      "name": "Aston Villa",
+      "fullName": "Aston Villa FC",
+      "tla": "AVL",
+      "crest": "https://crests.football-data.org/58.png"
+    },
+    {
+      "name": "Chelsea",
+      "fullName": "Chelsea FC",
+      "tla": "CHE",
+      "crest": "https://crests.football-data.org/61.png"
+    },
+    {
+      "name": "Everton",
+      "fullName": "Everton FC",
+      "tla": "EVE",
+      "crest": "https://crests.football-data.org/62.png"
+    },
+    {
+      "name": "Fulham",
+      "fullName": "Fulham FC",
+      "tla": "FUL",
+      "crest": "https://crests.football-data.org/63.png"
+    },
+    {
+      "name": "Liverpool",
+      "fullName": "Liverpool FC",
+      "tla": "LIV",
+      "crest": "https://crests.football-data.org/64.png"
+    },
+    {
+      "name": "Man City",
+      "fullName": "Manchester City FC",
+      "tla": "MCI",
+      "crest": "https://crests.football-data.org/65.png"
+    },
+    {
+      "name": "Man United",
+      "fullName": "Manchester United FC",
+      "tla": "MUN",
+      "crest": "https://crests.football-data.org/66.png"
+    },
+    {
+      "name": "Newcastle",
+      "fullName": "Newcastle United FC",
+      "tla": "NEW",
+      "crest": "https://crests.football-data.org/67.png"
+    },
+    {
+      "name": "Sunderland",
+      "fullName": "Sunderland AFC",
+      "tla": "SUN",
+      "crest": "https://crests.football-data.org/71.png"
+    },
+    {
+      "name": "Tottenham",
+      "fullName": "Tottenham Hotspur FC",
+      "tla": "TOT",
+      "crest": "https://crests.football-data.org/73.png"
+    },
+    {
+      "name": "Hull City",
+      "fullName": "Hull City AFC",
+      "tla": "HUL",
+      "crest": "https://crests.football-data.org/322.png"
+    },
+    {
+      "name": "Leeds United",
+      "fullName": "Leeds United FC",
+      "tla": "LEE",
+      "crest": "https://crests.football-data.org/341.png"
+    },
+    {
+      "name": "Ipswich Town",
+      "fullName": "Ipswich Town FC",
+      "tla": "IPS",
+      "crest": "https://crests.football-data.org/349.png"
+    },
+    {
+      "name": "Nottingham",
+      "fullName": "Nottingham Forest FC",
+      "tla": "NOT",
+      "crest": "https://crests.football-data.org/351.png"
+    },
+    {
+      "name": "Crystal Palace",
+      "fullName": "Crystal Palace FC",
+      "tla": "CRY",
+      "crest": "https://crests.football-data.org/354.png"
+    },
+    {
+      "name": "Brighton Hove",
+      "fullName": "Brighton & Hove Albion FC",
+      "tla": "BHA",
+      "crest": "https://crests.football-data.org/397.png"
+    },
+    {
+      "name": "Brentford",
+      "fullName": "Brentford FC",
+      "tla": "BRE",
+      "crest": "https://crests.football-data.org/402.png"
+    },
+    {
+      "name": "Bournemouth",
+      "fullName": "AFC Bournemouth",
+      "tla": "BOU",
+      "crest": "https://crests.football-data.org/bournemouth.png"
+    },
+    {
+      "name": "Coventry City",
+      "fullName": "Coventry City FC",
+      "tla": "COV",
+      "crest": "https://crests.football-data.org/1076.png"
+    },
+    {
+      "name": "Athletic",
+      "fullName": "Athletic Club",
+      "tla": "ATH",
+      "crest": "https://crests.football-data.org/77.png"
+    },
+    {
+      "name": "Atleti",
+      "fullName": "Club Atlético de Madrid",
+      "tla": "ATL",
+      "crest": "https://crests.football-data.org/78.png"
+    },
+    {
+      "name": "Osasuna",
+      "fullName": "CA Osasuna",
+      "tla": "OSA",
+      "crest": "https://crests.football-data.org/79.png"
+    },
+    {
+      "name": "Espanyol",
+      "fullName": "RCD Espanyol de Barcelona",
+      "tla": "ESP",
+      "crest": "https://crests.football-data.org/80.png"
+    },
+    {
+      "name": "Barça",
+      "fullName": "FC Barcelona",
+      "tla": "FCB",
+      "crest": "https://crests.football-data.org/81.png"
+    },
+    {
+      "name": "Getafe",
+      "fullName": "Getafe CF",
+      "tla": "GET",
+      "crest": "https://crests.football-data.org/82.png"
+    },
+    {
+      "name": "Málaga",
+      "fullName": "Málaga CF",
+      "tla": "MAL",
+      "crest": "https://crests.football-data.org/84.png"
+    },
+    {
+      "name": "Real Madrid",
+      "fullName": "Real Madrid CF",
+      "tla": "RMA",
+      "crest": "https://crests.football-data.org/86.png"
+    },
+    {
+      "name": "Rayo Vallecano",
+      "fullName": "Rayo Vallecano de Madrid",
+      "tla": "RAY",
+      "crest": "https://crests.football-data.org/87.png"
+    },
+    {
+      "name": "Levante",
+      "fullName": "Levante UD",
+      "tla": "LEV",
+      "crest": "https://crests.football-data.org/88.png"
+    },
+    {
+      "name": "Real Betis",
+      "fullName": "Real Betis Balompié",
+      "tla": "BET",
+      "crest": "https://crests.football-data.org/90.png"
+    },
+    {
+      "name": "Real Sociedad",
+      "fullName": "Real Sociedad de Fútbol",
+      "tla": "RSO",
+      "crest": "https://crests.football-data.org/92.png"
+    },
+    {
+      "name": "Villarreal",
+      "fullName": "Villarreal CF",
+      "tla": "VIL",
+      "crest": "https://crests.football-data.org/94.png"
+    },
+    {
+      "name": "Valencia",
+      "fullName": "Valencia CF",
+      "tla": "VAL",
+      "crest": "https://crests.football-data.org/95.png"
+    },
+    {
+      "name": "Alavés",
+      "fullName": "Deportivo Alavés",
+      "tla": "ALA",
+      "crest": "https://crests.football-data.org/263.png"
+    },
+    {
+      "name": "Elche",
+      "fullName": "Elche CF",
+      "tla": "ELC",
+      "crest": "https://crests.football-data.org/285.png"
+    },
+    {
+      "name": "Celta",
+      "fullName": "RC Celta de Vigo",
+      "tla": "CEL",
+      "crest": "https://crests.football-data.org/558.png"
+    },
+    {
+      "name": "Sevilla FC",
+      "fullName": "Sevilla FC",
+      "tla": "SEV",
+      "crest": "https://crests.football-data.org/559.png"
+    },
+    {
+      "name": "Deportivo",
+      "fullName": "RC Deportivo La Coruña",
+      "tla": "DEP",
+      "crest": "https://crests.football-data.org/560.png"
+    },
+    {
+      "name": "Santander",
+      "fullName": "Real Racing Club de Santander",
+      "tla": "SAN",
+      "crest": "https://crests.football-data.org/5335.png"
+    },
+    {
+      "name": "Milan",
+      "fullName": "AC Milan",
+      "tla": "MIL",
+      "crest": "https://crests.football-data.org/98.png"
+    },
+    {
+      "name": "Fiorentina",
+      "fullName": "ACF Fiorentina",
+      "tla": "FIO",
+      "crest": "https://crests.football-data.org/99.png"
+    },
+    {
+      "name": "Roma",
+      "fullName": "AS Roma",
+      "tla": "ROM",
+      "crest": "https://crests.football-data.org/100.png"
+    },
+    {
+      "name": "Atalanta",
+      "fullName": "Atalanta BC",
+      "tla": "ATA",
+      "crest": "https://crests.football-data.org/102.png"
+    },
+    {
+      "name": "Bologna",
+      "fullName": "Bologna FC 1909",
+      "tla": "BOL",
+      "crest": "https://crests.football-data.org/103.png"
+    },
+    {
+      "name": "Cagliari",
+      "fullName": "Cagliari Calcio",
+      "tla": "CAG",
+      "crest": "https://crests.football-data.org/104.png"
+    },
+    {
+      "name": "Genoa",
+      "fullName": "Genoa CFC",
+      "tla": "GEN",
+      "crest": "https://crests.football-data.org/107.png"
+    },
+    {
+      "name": "Inter",
+      "fullName": "FC Internazionale Milano",
+      "tla": "INT",
+      "crest": "https://crests.football-data.org/108.png"
+    },
+    {
+      "name": "Juventus",
+      "fullName": "Juventus FC",
+      "tla": "JUV",
+      "crest": "https://crests.football-data.org/109.png"
+    },
+    {
+      "name": "Lazio",
+      "fullName": "SS Lazio",
+      "tla": "LAZ",
+      "crest": "https://crests.football-data.org/110.png"
+    },
+    {
+      "name": "Parma",
+      "fullName": "Parma Calcio 1913",
+      "tla": "PAR",
+      "crest": "https://crests.football-data.org/112.png"
+    },
+    {
+      "name": "Napoli",
+      "fullName": "SSC Napoli",
+      "tla": "NAP",
+      "crest": "https://crests.football-data.org/113.png"
+    },
+    {
+      "name": "Udinese",
+      "fullName": "Udinese Calcio",
+      "tla": "UDI",
+      "crest": "https://crests.football-data.org/115.png"
+    },
+    {
+      "name": "Venezia FC",
+      "fullName": "Venezia FC",
+      "tla": "VEN",
+      "crest": "https://crests.football-data.org/454.png"
+    },
+    {
+      "name": "Frosinone",
+      "fullName": "Frosinone Calcio",
+      "tla": "FRO",
+      "crest": "https://crests.football-data.org/470.png"
+    },
+    {
+      "name": "Sassuolo",
+      "fullName": "US Sassuolo Calcio",
+      "tla": "SAS",
+      "crest": "https://crests.football-data.org/471.png"
+    },
+    {
+      "name": "Torino",
+      "fullName": "Torino FC",
+      "tla": "TOR",
+      "crest": "https://crests.football-data.org/586.png"
+    },
+    {
+      "name": "Lecce",
+      "fullName": "US Lecce",
+      "tla": "USL",
+      "crest": "https://crests.football-data.org/5890.png"
+    },
+    {
+      "name": "Monza",
+      "fullName": "AC Monza",
+      "tla": "MON",
+      "crest": "https://crests.football-data.org/5911.png"
+    },
+    {
+      "name": "Como 1907",
+      "fullName": "Como 1907",
+      "tla": "COM",
+      "crest": "https://crests.football-data.org/7397.png"
+    },
+    {
+      "name": "1. FC Köln",
+      "fullName": "1. FC Köln",
+      "tla": "KOE",
+      "crest": "https://crests.football-data.org/1.png"
+    },
+    {
+      "name": "Hoffenheim",
+      "fullName": "TSG 1899 Hoffenheim",
+      "tla": "TSG",
+      "crest": "https://crests.football-data.org/2.png"
+    },
+    {
+      "name": "Leverkusen",
+      "fullName": "Bayer 04 Leverkusen",
+      "tla": "B04",
+      "crest": "https://crests.football-data.org/3.png"
+    },
+    {
+      "name": "Dortmund",
+      "fullName": "Borussia Dortmund",
+      "tla": "BVB",
+      "crest": "https://crests.football-data.org/4.png"
+    },
+    {
+      "name": "Bayern",
+      "fullName": "FC Bayern München",
+      "tla": "FCB",
+      "crest": "https://crests.football-data.org/5.png"
+    },
+    {
+      "name": "Schalke",
+      "fullName": "FC Schalke 04",
+      "tla": "S04",
+      "crest": "https://crests.football-data.org/6.png"
+    },
+    {
+      "name": "HSV",
+      "fullName": "Hamburger SV",
+      "tla": "HSV",
+      "crest": "https://crests.football-data.org/7.png"
+    },
+    {
+      "name": "Stuttgart",
+      "fullName": "VfB Stuttgart",
+      "tla": "VFB",
+      "crest": "https://crests.football-data.org/10.png"
+    },
+    {
+      "name": "Bremen",
+      "fullName": "SV Werder Bremen",
+      "tla": "SVW",
+      "crest": "https://crests.football-data.org/12.png"
+    },
+    {
+      "name": "Mainz",
+      "fullName": "1. FSV Mainz 05",
+      "tla": "M05",
+      "crest": "https://crests.football-data.org/15.png"
+    },
+    {
+      "name": "Augsburg",
+      "fullName": "FC Augsburg",
+      "tla": "FCA",
+      "crest": "https://crests.football-data.org/16.png"
+    },
+    {
+      "name": "Freiburg",
+      "fullName": "SC Freiburg",
+      "tla": "SCF",
+      "crest": "https://crests.football-data.org/17.png"
+    },
+    {
+      "name": "M'gladbach",
+      "fullName": "Borussia Mönchengladbach",
+      "tla": "BMG",
+      "crest": "https://crests.football-data.org/18.png"
+    },
+    {
+      "name": "Frankfurt",
+      "fullName": "Eintracht Frankfurt",
+      "tla": "SGE",
+      "crest": "https://crests.football-data.org/19.png"
+    },
+    {
+      "name": "Union Berlin",
+      "fullName": "1. FC Union Berlin",
+      "tla": "UNB",
+      "crest": "https://crests.football-data.org/28.png"
+    },
+    {
+      "name": "SC Paderborn",
+      "fullName": "SC Paderborn 07",
+      "tla": "SCP",
+      "crest": "https://crests.football-data.org/29.png"
+    },
+    {
+      "name": "Elversberg",
+      "fullName": "SV 07 Elversberg",
+      "tla": "ELV",
+      "crest": "https://crests.football-data.org/719.png"
+    },
+    {
+      "name": "RB Leipzig",
+      "fullName": "RB Leipzig",
+      "tla": "RBL",
+      "crest": "https://crests.football-data.org/721.png"
+    },
+    {
+      "name": "Toulouse",
+      "fullName": "Toulouse FC",
+      "tla": "TOU",
+      "crest": "https://crests.football-data.org/511.png"
+    },
+    {
+      "name": "Brest",
+      "fullName": "Stade Brestois 29",
+      "tla": "BRE",
+      "crest": "https://crests.football-data.org/512.png"
+    },
+    {
+      "name": "Marseille",
+      "fullName": "Olympique de Marseille",
+      "tla": "MAR",
+      "crest": "https://crests.football-data.org/516.png"
+    },
+    {
+      "name": "Auxerre",
+      "fullName": "AJ Auxerre",
+      "tla": "AJA",
+      "crest": "https://crests.football-data.org/519.png"
+    },
+    {
+      "name": "Lille",
+      "fullName": "Lille OSC",
+      "tla": "LIL",
+      "crest": "https://crests.football-data.org/521.png"
+    },
+    {
+      "name": "Nice",
+      "fullName": "OGC Nice",
+      "tla": "NIC",
+      "crest": "https://crests.football-data.org/522.png"
+    },
+    {
+      "name": "Olympique Lyon",
+      "fullName": "Olympique Lyonnais",
+      "tla": "LYO",
+      "crest": "https://crests.football-data.org/523.png"
+    },
+    {
+      "name": "PSG",
+      "fullName": "Paris Saint-Germain FC",
+      "tla": "PSG",
+      "crest": "https://crests.football-data.org/524.png"
+    },
+    {
+      "name": "Lorient",
+      "fullName": "FC Lorient",
+      "tla": "FCL",
+      "crest": "https://crests.football-data.org/525.png"
+    },
+    {
+      "name": "Stade Rennais",
+      "fullName": "Stade Rennais FC 1901",
+      "tla": "REN",
+      "crest": "https://crests.football-data.org/529.png"
+    },
+    {
+      "name": "Troyes",
+      "fullName": "ES Troyes AC",
+      "tla": "ETR",
+      "crest": "https://crests.football-data.org/531.png"
+    },
+    {
+      "name": "Angers SCO",
+      "fullName": "Angers SCO",
+      "tla": "ANG",
+      "crest": "https://crests.football-data.org/532.png"
+    },
+    {
+      "name": "Le Havre",
+      "fullName": "Le Havre AC",
+      "tla": "HAC",
+      "crest": "https://crests.football-data.org/533.png"
+    },
+    {
+      "name": "Le Mans",
+      "fullName": "Le Mans FC",
+      "tla": "LMF",
+      "crest": "https://crests.football-data.org/535.png"
+    },
+    {
+      "name": "RC Lens",
+      "fullName": "Racing Club de Lens",
+      "tla": "RCL",
+      "crest": "https://crests.football-data.org/546.png"
+    },
+    {
+      "name": "Monaco",
+      "fullName": "AS Monaco FC",
+      "tla": "ASM",
+      "crest": "https://crests.football-data.org/548.png"
+    },
+    {
+      "name": "Strasbourg",
+      "fullName": "RC Strasbourg Alsace",
+      "tla": "RC ",
+      "crest": "https://crests.football-data.org/576.png"
+    },
+    {
+      "name": "Paris FC",
+      "fullName": "Paris FC",
+      "tla": "PFC",
+      "crest": "https://crests.football-data.org/1045.png"
+    },
+    {
+      "name": "Fluminense",
+      "fullName": "Fluminense FC",
+      "tla": "FLU",
+      "crest": "https://crests.football-data.org/1765.png"
+    },
+    {
+      "name": "Mineiro",
+      "fullName": "CA Mineiro",
+      "tla": "CAM",
+      "crest": "https://crests.football-data.org/1766.png"
+    },
+    {
+      "name": "Grêmio",
+      "fullName": "Grêmio FBPA",
+      "tla": "FBP",
+      "crest": "https://crests.football-data.org/1767.png"
+    },
+    {
+      "name": "Paranaense",
+      "fullName": "CA Paranaense",
+      "tla": "CAP",
+      "crest": "https://crests.football-data.org/1768.png"
+    },
+    {
+      "name": "Palmeiras",
+      "fullName": "SE Palmeiras",
+      "tla": "PAL",
+      "crest": "https://crests.football-data.org/1769.png"
+    },
+    {
+      "name": "Botafogo",
+      "fullName": "Botafogo FR",
+      "tla": "BOT",
+      "crest": "https://crests.football-data.org/1770.png"
+    },
+    {
+      "name": "Cruzeiro",
+      "fullName": "Cruzeiro EC",
+      "tla": "CRU",
+      "crest": "https://crests.football-data.org/1771.png"
+    },
+    {
+      "name": "Chapecoense",
+      "fullName": "Chapecoense AF",
+      "tla": "CHA",
+      "crest": "https://crests.football-data.org/1772_large.png"
+    },
+    {
+      "name": "São Paulo",
+      "fullName": "São Paulo FC",
+      "tla": "PAU",
+      "crest": "https://crests.football-data.org/1776.png"
+    },
+    {
+      "name": "Bahia",
+      "fullName": "EC Bahia",
+      "tla": "BAH",
+      "crest": "https://crests.football-data.org/1777.png"
+    },
+    {
+      "name": "Corinthians",
+      "fullName": "SC Corinthians Paulista",
+      "tla": "COR",
+      "crest": "https://crests.football-data.org/1779.png"
+    },
+    {
+      "name": "Vasco da Gama",
+      "fullName": "CR Vasco da Gama",
+      "tla": "VAS",
+      "crest": "https://crests.football-data.org/1780.png"
+    },
+    {
+      "name": "Vitória",
+      "fullName": "EC Vitória",
+      "tla": "VIT",
+      "crest": "https://crests.football-data.org/1782.png"
+    },
+    {
+      "name": "Flamengo",
+      "fullName": "CR Flamengo",
+      "tla": "FLA",
+      "crest": "https://crests.football-data.org/1783.png"
+    },
+    {
+      "name": "Coritiba",
+      "fullName": "Coritiba FBC",
+      "tla": "COR",
+      "crest": "https://crests.football-data.org/4241.png"
+    },
+    {
+      "name": "Bragantino",
+      "fullName": "RB Bragantino",
+      "tla": "RBB",
+      "crest": "https://crests.football-data.org/4286.png"
+    },
+    {
+      "name": "Clube do Remo",
+      "fullName": "Clube do Remo",
+      "tla": "CRE",
+      "crest": "https://crests.football-data.org/4287.png"
+    },
+    {
+      "name": "Mirassol",
+      "fullName": "Mirassol FC",
+      "tla": "MIR",
+      "crest": "https://crests.football-data.org/4364.png"
+    },
+    {
+      "name": "Internacional",
+      "fullName": "SC Internacional",
+      "tla": "SCI",
+      "crest": "https://crests.football-data.org/6684.png"
+    },
+    {
+      "name": "Santos",
+      "fullName": "Santos FC",
+      "tla": "SAN",
+      "crest": "https://crests.football-data.org/6685.png"
+    },
+    {
+      "name": "Sporting CP",
+      "fullName": "Sporting Clube de Portugal",
+      "tla": "SPO",
+      "crest": "https://crests.football-data.org/498.png"
+    },
+    {
+      "name": "Porto",
+      "fullName": "FC Porto",
+      "tla": "FCP",
+      "crest": "https://crests.football-data.org/503.png"
+    },
+    {
+      "name": "Galatasaray",
+      "fullName": "Galatasaray SK",
+      "tla": "GAL",
+      "crest": "https://crests.football-data.org/610.png"
+    },
+    {
+      "name": "Fenerbahçe",
+      "fullName": "Fenerbahçe SK",
+      "tla": "FEN",
+      "crest": "https://crests.football-data.org/613.png"
+    },
+    {
+      "name": "PSV",
+      "fullName": "PSV",
+      "tla": "PSV",
+      "crest": "https://crests.football-data.org/674.png"
+    },
+    {
+      "name": "Feyenoord",
+      "fullName": "Feyenoord Rotterdam",
+      "tla": "FEY",
+      "crest": "https://crests.football-data.org/675.png"
+    },
+    {
+      "name": "Club Brugge",
+      "fullName": "Club Brugge KV",
+      "tla": "BRU",
+      "crest": "https://crests.football-data.org/851.png"
+    },
+    {
+      "name": "Slavia Praha",
+      "fullName": "SK Slavia Praha",
+      "tla": "SLP",
+      "crest": "https://crests.football-data.org/930.png"
+    },
+    {
+      "name": "Shaktar",
+      "fullName": "FK Shakhtar Donetsk",
+      "tla": "SHD",
+      "crest": "https://crests.football-data.org/1887.png"
+    },
+    {
+      "name": "PAE AEK",
+      "fullName": "PAE AEK",
+      "tla": "AEK",
+      "crest": "https://crests.football-data.org/1899.png"
+    },
+    {
+      "name": "LASK",
+      "fullName": "LASK Linz",
+      "tla": "LIN",
+      "crest": "https://crests.football-data.org/2016.png"
+    },
+    {
+      "name": "Viking",
+      "fullName": "Viking FK",
+      "tla": "VIK",
+      "crest": "https://crests.football-data.org/5720.png"
+    },
+    {
+      "name": "Bodø/Glimt",
+      "fullName": "FK Bodø/Glimt",
+      "tla": "FK",
+      "crest": "https://crests.football-data.org/5721.png"
+    },
+    {
+      "name": "Sl. Bratislava",
+      "fullName": "ŠK Slovan Bratislava",
+      "tla": "SBA",
+      "crest": "https://crests.football-data.org/7509.png"
+    },
+    {
+      "name": "Sabah FK",
+      "fullName": "Sabah FK",
+      "tla": "SAB",
+      "crest": "https://crests.football-data.org/10233.png"
+    }
+  ]
+}
