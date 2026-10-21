@@ -1,1 +1,191 @@
-{}
+{
+  "2026-10-21|levante|athletic club": {
+    "chamada": "Quarta à tarde tem Levante x Athletic, com os Leões de Bilbao em campo pela LaLiga. Bora?",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-22|kairat almaty|panathinaikos": {
+    "chamada": "Do Cazaquistão pra sua tela: Kairat recebe o tradicional Panathinaikos na Conference League!",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-22|juventus|rennes": {
+    "chamada": "A Velha Senhora joga em casa na Europa League contra o Rennes. Quinta tem Juve na Cazé!",
+    "selo": "JOGAÇO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-22|bournemouth|ac milan": {
+    "chamada": "Rossoneri na costa inglesa! Bournemouth encara o gigante Milan pela Europa League, de graça.",
+    "selo": "JOGAÇO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-22|monaco|sc freiburg": {
+    "chamada": "Principado x Floresta Negra: Monaco e Freiburg se cruzam na Conference League às 16h.",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-23|vfb stuttgart|borussia m'gladbach": {
+    "chamada": "Sextou com Bundesliga: Stuttgart e Gladbach, duas camisas tradicionais da Alemanha, frente a frente!",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-23|alavés|malaga": {
+    "chamada": "Tem LaLiga pra fechar a sexta: Alavés recebe o Málaga em Vitória. Cola com a gente!",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-24|rayo vallecano|elche": {
+    "chamada": "Café da manhã em Vallecas! Rayo e Elche abrem o sábado às 9h, ao vivo e de graça.",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-24|rb leipzig|sv elversberg": {
+    "chamada": "Os Touros Vermelhos recebem o Elversberg pela Bundesliga. Sábado, 10h30, chega mais!",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-24|racing santander|espanyol": {
+    "chamada": "Santander abre as portas do El Sardinero pro Espanyol. Mais LaLiga no seu sábado!",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-24|toulouse|estac troyes": {
+    "chamada": "Ligue 1 no almoço: Toulouse e Troyes se enfrentam às 12h15, direto na Cazé.",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-24|napoli|roma": {
+    "chamada": "É o Derby del Sole! Napoli e Roma em clássico quente do sul da Itália, sábado às 13h.",
+    "selo": "CLÁSSICO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-24|valencia|villarreal": {
+    "chamada": "Duelo da Comunidade Valenciana: Valencia x Villarreal promete ferver no sábado às 13h30!",
+    "selo": "JOGAÇO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-24|lens|paris fc": {
+    "chamada": "Torcida do Lens é show à parte! Os Sang et Or recebem o Paris FC pela Ligue 1.",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-24|atletico madrid|deportivo la coruna": {
+    "chamada": "Colchoneros contra o tradicional Depor! Atlético de Madrid x Deportivo, sábado às 16h.",
+    "selo": "JOGAÇO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-24|vasco|corinthians": {
+    "chamada": "Gigantes do futebol brasileiro em campo: Vasco x Corinthians pelo Brasileirão, de graça na Cazé!",
+    "selo": "DUELO DE GIGANTES",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|monaco|lille": {
+    "chamada": "Domingo começa bem: Monaco e Lille, dois pesos-pesados da França, às 11h.",
+    "selo": "JOGAÇO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|manchester united|bournemouth": {
+    "chamada": "Old Trafford recebe o Bournemouth! Manchester United em campo pela Premier League no domingo.",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|celta vigo|real betis": {
+    "chamada": "Vigo x Sevilha: Celta e Betis se encontram no domingo ao meio-dia pela LaLiga. Vem!",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|marseille|le havre": {
+    "chamada": "No caldeirão do Vélodrome, o OM recebe o Le Havre. Domingão de Ligue 1!",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|rennes|strasbourg": {
+    "chamada": "Bretanha x Alsácia: Rennes e Strasbourg duelam às 13h15 pela Ligue 1.",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|auxerre|le mans": {
+    "chamada": "Quer mais Ligue 1? Auxerre e Le Mans também entram em campo às 13h15.",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|angers|lorient": {
+    "chamada": "Rodada cheia na França: Angers e Lorient completam o pacote das 13h15.",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|real sociedad|levante": {
+    "chamada": "San Sebastián, domingão e LaLiga: Real Sociedad encara o Levante às 14h30. Tá liberado!",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|psg|lyon": {
+    "chamada": "Parque dos Príncipes em noite de gala: PSG x Lyon, duelo de gigantes da França!",
+    "selo": "DUELO DE GIGANTES",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-25|barcelona|real madrid": {
+    "chamada": "O maior clássico do planeta é na Cazé! Barcelona x Real Madrid, domingo às 17h, de graça!",
+    "selo": "CLÁSSICO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-30|le havre|psg": {
+    "chamada": "Sexta tem PSG! Os parisienses visitam o Le Havre pela Ligue 1. Bora junto?",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-21T17:50:53.342Z"
+  }
+}
