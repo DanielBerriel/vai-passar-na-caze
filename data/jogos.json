@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T18:28:17.172Z",
+  "generatedAt": "2026-10-21T14:08:10.901Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -9,13 +9,13 @@
           "page": "/jogos-hoje",
           "ok": true,
           "parsed": 16,
-          "cazetv": 0
+          "cazetv": 1
         },
         {
           "page": "/jogos-amanha",
           "ok": true,
-          "parsed": 16,
-          "cazetv": 1
+          "parsed": 9,
+          "cazetv": 4
         },
         {
           "page": "/canal/cazetv",
@@ -122,7 +122,7 @@
   "stats": {
     "guidePagesRead": 17,
     "leaguesScanned": 13,
-    "guideMatchesRead": 114,
+    "guideMatchesRead": 103,
     "apiMatchesRead": 0,
     "cazetvBroadcasts": 26,
     "reconciled": 0,
@@ -241,42 +241,6 @@
       }
     },
     {
-      "id": "fntv-monaco-x-sc-freiburg-cf95953ffab5",
-      "kickoff": "2026-10-22T19:00:00.000Z",
-      "status": null,
-      "competition": {
-        "emblem": null,
-        "code": "UECL",
-        "name": "Conference League"
-      },
-      "stage": "Fase de liga · Rodada 2",
-      "home": {
-        "name": "Monaco",
-        "fullName": "Monaco",
-        "tla": null,
-        "crest": null
-      },
-      "away": {
-        "name": "SC Freiburg",
-        "fullName": "SC Freiburg",
-        "tla": null,
-        "crest": null
-      },
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/monaco-x-sc-freiburg-cf95953ffab5.html",
-      "reconciliation": {
-        "method": "guia"
-      },
-      "copy": {
-        "text": "Marca no calendário: Monaco x SC Freiburg, Conference League ao vivo na CazéTV.",
-        "badge": "VALE O PLAY",
-        "source": "template"
-      }
-    },
-    {
       "id": "fntv-bournemouth-x-ac-milan-430f2d112e5e",
       "kickoff": "2026-10-22T19:00:00.000Z",
       "status": null,
@@ -308,6 +272,42 @@
       },
       "copy": {
         "text": "Tem Europa League na faixa! Bournemouth x AC Milan, ao vivo no YouTube.",
+        "badge": "VALE O PLAY",
+        "source": "template"
+      }
+    },
+    {
+      "id": "fntv-monaco-x-sc-freiburg-cf95953ffab5",
+      "kickoff": "2026-10-22T19:00:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "UECL",
+        "name": "Conference League"
+      },
+      "stage": "Fase de liga · Rodada 2",
+      "home": {
+        "name": "Monaco",
+        "fullName": "Monaco",
+        "tla": null,
+        "crest": null
+      },
+      "away": {
+        "name": "SC Freiburg",
+        "fullName": "SC Freiburg",
+        "tla": null,
+        "crest": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/monaco-x-sc-freiburg-cf95953ffab5.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Marca no calendário: Monaco x SC Freiburg, Conference League ao vivo na CazéTV.",
         "badge": "VALE O PLAY",
         "source": "template"
       }
