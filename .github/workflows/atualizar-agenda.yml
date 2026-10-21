@@ -2,10 +2,13 @@ name: Atualizar agenda
 
 on:
   schedule:
-    # A cada 6 horas: 03:17, 09:17, 15:17 e 21:17 em Brasília. Minuto "quebrado"
-    # para fugir do pico de filas do GitHub.
-    - cron: "17 */6 * * *"
+    # Uma vez por dia, 06:17 em Brasília (09:17 UTC), antes dos jogos do dia.
+    # "Hoje", "próximo jogo" e "ao vivo" são calculados no navegador, então a
+    # página continua certa entre uma execução e outra.
+    - cron: "17 9 * * *"
+  # Botão "Run workflow": roda o pipeline completo na hora.
   workflow_dispatch:
+  # Push de código só republica o site, sem chamar nenhuma API.
   push:
     branches: [main]
 
@@ -38,6 +41,7 @@ jobs:
         run: npm test
 
       - name: Pipeline (guia + API + Claude)
+        if: github.event_name != 'push'
         # Se as fontes falharem, o site é publicado com os últimos dados bons.
         continue-on-error: true
         run: npm run dados
@@ -46,6 +50,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Versionar dados
+        if: github.event_name != 'push'
         run: |
           git config user.name "agenda-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

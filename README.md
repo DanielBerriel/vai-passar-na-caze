@@ -4,7 +4,7 @@
 
 **Ao vivo: [danielberriel.github.io/vai-passar-na-caze](https://danielberriel.github.io/vai-passar-na-caze/)**
 
-A página mostra a agenda das transmissões gratuitas da CazéTV com chamadas escritas por IA. Ninguém digita nada: a cada 6 horas, um pipeline descobre o que vai passar, confere em duas fontes, escreve as chamadas e publica.
+A página mostra a agenda das transmissões gratuitas da CazéTV com chamadas escritas por IA. Ninguém digita nada: todo dia, às 6h, um pipeline descobre o que vai passar, confere em duas fontes, escreve as chamadas e publica.
 
 > Projeto conceitual e independente. Não é um site oficial da CazéTV e não tem afiliação com ela.
 
@@ -25,8 +25,8 @@ A página mostra a agenda das transmissões gratuitas da CazéTV com chamadas es
 ### Decisões de engenharia
 
 - **Degradação graciosa**: sem chave da API, o guia sustenta a agenda. Sem chave da Anthropic, ou se o modelo recusar ou falhar, entram templates. Se nenhuma página do guia responder, o pipeline aborta sem sobrescrever o último `jogos.json` bom.
-- **Custo**: uma única requisição ao Claude por execução, só para jogos que ainda não têm chamada. O resto vem do `data/copy-cache.json`.
-- **Front-end sem build**: HTML, CSS e JS puros lendo um JSON estático. O status "ao vivo" e a contagem regressiva são calculados no navegador, então a página não depende da frequência do robô.
+- **Custo**: o pipeline roda uma vez por dia, com no máximo uma requisição ao Claude, só para jogos que ainda não têm chamada. O resto vem do `data/copy-cache.json`. Push de código só republica o site, sem chamar API.
+- **Front-end sem build**: HTML, CSS e JS puros lendo um JSON estático com cerca de 10 dias de jogos. "Hoje/Amanhã", "próximo jogo", "ao vivo", contagem regressiva e a saída dos jogos encerrados são calculados no navegador, então a página continua certa entre uma execução diária e outra.
 - **Scraping responsável**: o robots.txt do guia permite a coleta. São poucas páginas por execução, em sequência e com pausa, e a fonte é creditada. Numa versão real, isso seria trocado pelos dados internos da própria LiveMode.
 
 ## Rodando localmente
@@ -54,7 +54,7 @@ Variáveis de ambiente, todas opcionais. Localmente, `npm run dados` lê um arqu
 1. Crie um repositório público no GitHub e envie este projeto para a branch `main`.
 2. Em **Settings → Secrets and variables → Actions**, crie os secrets `FOOTBALL_DATA_TOKEN` e `ANTHROPIC_API_KEY`.
 3. Em **Settings → Pages**, escolha **Source: GitHub Actions**.
-4. Em **Actions → Atualizar agenda**, clique em **Run workflow**. Depois disso, ele roda sozinho a cada 6 horas.
+4. Em **Actions → Atualizar agenda**, clique em **Run workflow**. Depois disso, ele roda sozinho todo dia às 06:17 (Brasília).
 5. Num fork, troque a URL do GitHub Pages em `og:url`, `og:image` e `canonical` no [index.html](index.html), e o `repoUrl` em [assets/app.js](assets/app.js).
 
 ## Estrutura

@@ -8,6 +8,8 @@ const CONFIG = {
 
 const TZ = "America/Sao_Paulo";
 const MATCH_MINUTES = 115;
+// A finished match shows as "Encerrado" for a while, then leaves the page.
+const HIDE_AFTER_MINUTES = 180;
 const BADGE_PRIORITY = { "CLÁSSICO": 6, "DUELO DE GIGANTES": 5, "JOGAÇO": 4, "IMPERDÍVEL": 3, "VALE O PLAY": 1, "RODADA": 0 };
 const COMPETITION_COLORS = {
   PD: "#ff5a4e", PL: "#b07cff", FL1: "#4dd9ff", BL1: "#ff9f43", SA: "#4d8dff",
@@ -167,7 +169,7 @@ function renderFeatured(list, now) {
   const el = $("#featured");
   const pick = pickFeatured(list, now);
   if (!pick) {
-    el.innerHTML = `<div class="empty"><strong>Intervalo na agenda</strong>Nenhum jogo da Cazé confirmado nos próximos dias. O robô confere de novo em até 6 horas.</div>`;
+    el.innerHTML = `<div class="empty"><strong>Intervalo na agenda</strong>Nenhum jogo da Cazé confirmado nos próximos dias. O robô confere de novo amanhã cedo.</div>`;
     return;
   }
   const { b, label, live } = pick;
@@ -353,16 +355,18 @@ async function main() {
     return;
   }
 
-  const list = data.broadcasts;
+  // The data is refreshed once a day; everything time-based is decided here.
+  const onAir = (now) => data.broadcasts.filter((b) => Date.parse(b.kickoff) + HIDE_AFTER_MINUTES * 60000 > now.getTime());
   const render = () => {
     const now = new Date();
+    const list = onAir(now);
     renderStats(list, now);
     renderFeatured(list, now);
     renderAgenda(list, now);
     renderPipeline(data, now);
   };
 
-  renderFilters(list);
+  renderFilters(onAir(new Date()));
   render();
   // The agenda renders after load and shifts the page; land deep links where they point.
   if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
@@ -372,13 +376,15 @@ async function main() {
     if (!chip) return;
     activeFilter = chip.dataset.filter;
     for (const c of document.querySelectorAll(".chip")) c.setAttribute("aria-pressed", String(c === chip));
-    renderAgenda(list, new Date());
+    const now = new Date();
+    renderAgenda(onAir(now), now);
   });
 
   $("#agenda-list").addEventListener("click", (event) => {
     if (!event.target.closest("[data-expand]")) return;
     expanded = true;
-    renderAgenda(list, new Date());
+    const now = new Date();
+    renderAgenda(onAir(now), now);
   });
 
   setInterval(() => {
