@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vai Passar na Cazé · conceito por Daniel Berriel</title>
+  <meta name="description" content="Conceito de produto para a LiveMode: a agenda de todos os jogos que a CazéTV vai transmitir, montada sozinha por um pipeline com API, scraping e IA generativa.">
+  <meta name="theme-color" content="#0a0a0c">
+
+  <link rel="canonical" href="https://danielberriel.github.io/vai-passar-na-caze/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://danielberriel.github.io/vai-passar-na-caze/">
+  <meta property="og:title" content="Vai Passar na Cazé · conceito por Daniel Berriel">
+  <meta property="og:description" content="Todo jogo que passa na CazéTV, num lugar só. Montado por um robô com API, scraping e IA: um portfólio de AI Engineering para a LiveMode.">
+  <meta property="og:image" content="https://danielberriel.github.io/vai-passar-na-caze/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffe14d'/%3E%3Cpath d='M24 18l24 14-24 14z' fill='%230a0a0c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#agenda">Pular para a agenda</a>
+
+  <div class="ribbon" role="note">
+    Projeto conceitual de portfólio para a <strong>LiveMode</strong> · não é um site oficial da CazéTV
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#topo" aria-label="Vai Passar na Cazé, início">
+        <span class="wordmark-play" aria-hidden="true"></span>
+        <span>VAI PASSAR NA <em>CAZÉ</em></span>
+      </a>
+      <nav class="site-nav" aria-label="Seções">
+        <a href="#agenda">Agenda</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#por-que">Por que IA</a>
+        <a class="nav-cta" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot-live" aria-hidden="true"></span> Agenda atualizada sozinha, a cada 3 horas</p>
+          <h1 class="display">Todo jogo que passa na Cazé, <span class="hl">num lugar só.</span></h1>
+          <p class="lead">
+            De graça, no YouTube, do jeito que só a CazéTV faz. Esta página cruza o calendário oficial
+            com guias de programação, e uma IA escreve a chamada de cada jogo.
+          </p>
+          <ul class="hero-stats" id="hero-stats" aria-label="Resumo da agenda">
+            <li class="skeleton-text">carregando agenda…</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#agenda">Ver a agenda</a>
+            <a class="btn btn-ghost" href="#como-funciona">Como foi feito</a>
+          </div>
+        </div>
+
+        <article class="featured" id="featured" aria-live="polite">
+          <div class="featured-skeleton" aria-hidden="true"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- AGENDA -->
+    <section class="section" id="agenda" aria-labelledby="agenda-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">A agenda</p>
+            <h2 class="display-sm" id="agenda-title">Dá o play, que vai passar na Cazé</h2>
+          </div>
+          <p class="section-note">Horários de Brasília · <span id="updated-at">atualizando…</span></p>
+        </div>
+
+        <div class="filters" id="filters" role="toolbar" aria-label="Filtrar por competição"></div>
+        <div id="agenda-list" class="agenda-list"></div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section section-alt" id="como-funciona" aria-labelledby="como-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Por trás da página</p>
+            <h2 class="display-sm" id="como-title">Nenhum jogo aqui foi digitado à mão</h2>
+          </div>
+          <p class="section-note section-note-wide">
+            A cada 3 horas um robô faz o trabalho de um produtor de conteúdo: descobre o que vai passar,
+            confere em duas fontes, escreve a chamada e publica. Os números abaixo são da última execução real.
+          </p>
+        </div>
+
+        <ol class="pipeline" id="pipeline">
+          <li class="step">
+            <span class="step-num">01</span>
+            <h3>Calendário oficial</h3>
+            <p>API da <strong>football-data.org</strong>: jogos, horários em UTC, status, placar e escudos.</p>
+            <p class="step-metric" data-metric="fixtures">…</p>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <h3>Quem transmite</h3>
+            <p><strong>Scraping</strong> do guia futebolnatv.com.br. O robô lê a página de direitos da CazéTV e descobre sozinho quais campeonatos visitar.</p>
+            <p class="step-metric" data-metric="guide">…</p>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <h3>Cruzamento</h3>
+            <p>"Bayern de Munique" e "FC Bayern München" são o mesmo time. Normalização, similaridade de texto e janela de horário casam as duas fontes.</p>
+            <p class="step-metric" data-metric="reconcile">…</p>
+          </li>
+          <li class="step">
+            <span class="step-num">04</span>
+            <h3>Chamadas com IA</h3>
+            <p><strong>Claude</strong> (Anthropic) escreve cada chamada na voz da marca, com regras contra fatos inventados e saída em JSON validado.</p>
+            <p class="step-metric" data-metric="copy">…</p>
+          </li>
+          <li class="step">
+            <span class="step-num">05</span>
+            <h3>Publicação</h3>
+            <p><strong>GitHub Actions</strong> roda tudo e publica no GitHub Pages. Sem servidor, sem banco, custo de infraestrutura zero.</p>
+            <p class="step-metric" data-metric="publish">…</p>
+          </li>
+        </ol>
+
+        <div class="decisions">
+          <h3 class="decisions-title">Decisões que fazem diferença em produção</h3>
+          <ul>
+            <li>
+              <strong>Se uma fonte cai, a página não cai.</strong>
+              Sem API, o guia sustenta a agenda. Sem IA, entram chamadas de template. Se o scraping falhar, a última versão boa continua no ar.
+            </li>
+            <li>
+              <strong>IA com guardrails.</strong>
+              O modelo só usa os fatos que recebe: nada de sequência de vitórias, desfalques ou tabela inventados com a marca em cima.
+            </li>
+            <li>
+              <strong>Custo sob controle.</strong>
+              Uma chamada ao modelo por execução, só para jogos novos. O resto vem do cache: centavos por semana.
+            </li>
+            <li>
+              <strong>Robô educado.</strong>
+              Poucas requisições, pausa entre elas, fontes creditadas. Em produção, isso seria trocado pelos dados internos da própria LiveMode.
+            </li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" id="repo-link" hidden target="_blank" rel="noopener">Ver o código no GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUE -->
+    <section class="section" id="por-que" aria-labelledby="porque-title">
+      <div class="container why-grid">
+        <div class="why-intro">
+          <p class="kicker">Por que isso importa</p>
+          <h2 class="display-sm" id="porque-title">IA na mão de quem é criativo vira produto, não slide</h2>
+          <p>
+            A LiveMode mudou a transmissão esportiva no Brasil ao ir aonde o torcedor está. Esse ritmo pede gente
+            que transforma uma ideia em algo funcionando em dias, não em trimestres.
+          </p>
+          <p>
+            Esta página é uma amostra pequena disso. Ela foi construída em parceria com o <strong>Claude Code</strong>:
+            eu defini o produto, as fontes e as regras, e a IA acelerou a execução. É assim que eu trabalho.
+          </p>
+        </div>
+
+        <ul class="why-cards">
+          <li class="why-card">
+            <h3>Conteúdo em escala, com a voz da marca</h3>
+            <p>Chamadas, títulos e descrições de YouTube, posts e roteiros de corte para cada jogo de cada campeonato, com revisão humana no fim da linha.</p>
+          </li>
+          <li class="why-card">
+            <h3>Operação que se organiza sozinha</h3>
+            <p>Grade de transmissões, checklists de produção e alertas quando um jogo muda de horário, cruzando fontes como esta página faz.</p>
+          </li>
+          <li class="why-card">
+            <h3>Comercial com dados na mão</h3>
+            <p>Relatórios de entrega para patrocinadores gerados automaticamente: audiência por jogo, aparições de marca, resumo pronto para o cliente.</p>
+          </li>
+          <li class="why-card">
+            <h3>Torcedor no centro</h3>
+            <p>Aviso do jogo do time do coração, resumo pós-jogo minutos depois do apito, busca "onde passa?" em linguagem natural.</p>
+          </li>
+          <li class="why-card">
+            <h3>Protótipo antes de apresentação</h3>
+            <p>Validar uma ideia com algo clicável, como esta página, antes de comprometer semanas do time.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato" aria-labelledby="contato-title">
+      <div class="container contact-inner">
+        <p class="kicker">Contato</p>
+        <h2 class="display" id="contato-title">Bora <span class="hl">conversar?</span></h2>
+        <p class="lead">
+          Eu sou Daniel Berriel e quero construir esse tipo de coisa com a LiveMode.
+          Se esta página te deu alguma ideia, me chama.
+        </p>
+        <a class="contact-email" id="contact-email" href="mailto:danielberriel163@gmail.com">danielberriel163@gmail.com</a>
+        <div class="contact-actions">
+          <a class="btn btn-primary" id="mailto-btn" href="mailto:danielberriel163@gmail.com">Mandar um e-mail</a>
+          <button class="btn btn-ghost" id="copy-email" type="button">Copiar e-mail</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        <strong>Vai Passar na Cazé</strong> é um projeto conceitual e independente, feito por Daniel Berriel
+        para o processo seletivo da LiveMode. Sem afiliação com a CazéTV; marcas e nomes pertencem aos seus donos.
+      </p>
+      <p class="footer-sources">
+        Dados de jogos e escudos: <a href="https://www.football-data.org" target="_blank" rel="noopener">football-data.org</a> ·
+        Transmissões: <a href="https://www.futebolnatv.com.br" target="_blank" rel="noopener">futebolnatv.com.br</a> ·
+        Chamadas: Claude (Anthropic)
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
