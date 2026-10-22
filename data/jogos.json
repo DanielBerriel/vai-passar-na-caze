@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T17:49:35.731Z",
+  "generatedAt": "2026-10-22T14:41:38.513Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -8,14 +8,14 @@
         {
           "page": "/jogos-hoje",
           "ok": true,
-          "parsed": 16,
-          "cazetv": 1
+          "parsed": 22,
+          "cazetv": 16
         },
         {
           "page": "/jogos-amanha",
           "ok": true,
-          "parsed": 10,
-          "cazetv": 4
+          "parsed": 19,
+          "cazetv": 2
         },
         {
           "page": "/canal/cazetv",
@@ -45,13 +45,13 @@
           "page": "/liga/uefa-europa-league-9q40bjxdyw",
           "ok": true,
           "parsed": 10,
-          "cazetv": 1
+          "cazetv": 5
         },
         {
           "page": "/liga/uefa-conference-league-jojp46ek60",
           "ok": true,
           "parsed": 10,
-          "cazetv": 1
+          "cazetv": 4
         },
         {
           "page": "/liga/campeonato-alemao-x5kmzzp7ug",
@@ -118,64 +118,27 @@
       "model": "claude-opus-5-5",
       "error": null,
       "usage": {
-        "inputTokens": 4065,
-        "outputTokens": 5055,
-        "estimatedUsd": 0.1174
+        "inputTokens": 2518,
+        "outputTokens": 2866,
+        "estimatedUsd": 0.0674
       }
     }
   },
   "stats": {
     "guidePagesRead": 17,
     "leaguesScanned": 13,
-    "guideMatchesRead": 104,
-    "apiMatchesRead": 121,
-    "cazetvBroadcasts": 27,
+    "guideMatchesRead": 108,
+    "apiMatchesRead": 117,
+    "cazetvBroadcasts": 39,
     "reconciled": 21,
-    "guideOnly": 6,
-    "teamsWithCrest": 52,
-    "teamsShown": 54,
-    "copyByClaude": 27,
-    "copyNewThisRun": 27,
+    "guideOnly": 18,
+    "teamsWithCrest": 63,
+    "teamsShown": 78,
+    "copyByClaude": 39,
+    "copyNewThisRun": 13,
     "copyFromTemplate": 0
   },
   "broadcasts": [
-    {
-      "id": "fd-564685",
-      "kickoff": "2026-10-21T18:00:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "PD",
-        "name": "LaLiga",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "stage": "Rodada 6",
-      "home": {
-        "name": "Levante",
-        "fullName": "Levante UD",
-        "tla": "LEV",
-        "crest": "https://crests.football-data.org/88.png"
-      },
-      "away": {
-        "name": "Athletic Club",
-        "fullName": "Athletic Club",
-        "tla": "ATH",
-        "crest": "https://crests.football-data.org/77.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/levante-x-athletic-club-709c107808d7.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Quarta à tarde tem Levante x Athletic, com os Leões de Bilbao em campo pela LaLiga. Bora?",
-        "badge": "VALE O PLAY",
-        "source": "claude"
-      }
-    },
     {
       "id": "fntv-kairat-almaty-x-panathinaikos-361d0637aa9b",
       "kickoff": "2026-10-22T14:30:00.000Z",
@@ -198,16 +161,44 @@
         "tla": null,
         "crest": null
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/kairat-almaty-x-panathinaikos-361d0637aa9b.html",
       "reconciliation": {
         "method": "guia"
       },
       "copy": {
         "text": "Do Cazaquistão pra sua tela: Kairat recebe o tradicional Panathinaikos na Conference League!",
+        "badge": "VALE O PLAY",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-lech-poznan-x-sunderland-628d0099d583",
+      "kickoff": "2026-10-22T16:45:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "EL",
+        "name": "Europa League"
+      },
+      "stage": "Fase de liga · Rodada 3",
+      "home": {
+        "name": "Lech Poznan",
+        "fullName": "Lech Poznan",
+        "tla": null,
+        "crest": null
+      },
+      "away": {
+        "name": "Sunderland",
+        "fullName": "Sunderland",
+        "tla": null,
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/lech-poznan-x-sunderland-628d0099d583.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Os Black Cats desembarcam na Polônia pra encarar o Lech Poznan. Quinta, 13:45, Europa League na faixa!",
         "badge": "VALE O PLAY",
         "source": "claude"
       }
@@ -234,16 +225,396 @@
         "tla": null,
         "crest": "https://crests.football-data.org/529.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/juventus-x-rennes-1d3b3c0f6705.html",
       "reconciliation": {
         "method": "guia"
       },
       "copy": {
         "text": "A Velha Senhora joga em casa na Europa League contra o Rennes. Quinta tem Juve na Cazé!",
+        "badge": "JOGAÇO",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-sturm-graz-x-marseille-fda271fdcd3c",
+      "kickoff": "2026-10-22T16:45:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "EL",
+        "name": "Europa League"
+      },
+      "stage": "Fase de liga · Rodada 3",
+      "home": {
+        "name": "Sturm Graz",
+        "fullName": "Sturm Graz",
+        "tla": null,
+        "crest": null
+      },
+      "away": {
+        "name": "Marseille",
+        "fullName": "Marseille",
+        "tla": null,
+        "crest": "https://crests.football-data.org/516.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/sturm-graz-x-marseille-fda271fdcd3c.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Marseille vai até a Áustria encarar o Sturm Graz. Quinta às 13:45, com o OM em ação na Cazé!",
+        "badge": "VALE O PLAY",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-getafe-x-fc-lugano-7b499d00b543",
+      "kickoff": "2026-10-22T16:45:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "UECL",
+        "name": "Conference League"
+      },
+      "stage": "Fase de liga · Rodada 2",
+      "home": {
+        "name": "Getafe",
+        "fullName": "Getafe",
+        "tla": null,
+        "crest": "https://crests.football-data.org/82.png"
+      },
+      "away": {
+        "name": "FC Lugano",
+        "fullName": "FC Lugano",
+        "tla": null,
+        "crest": null
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/getafe-x-fc-lugano-7b499d00b543.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Tem Espanha x Suíça na Conference: Getafe recebe o Lugano quinta, 13:45. Bora?",
+        "badge": "RODADA",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-estrela-vermelha-x-fc-copenhagen-0162d48d8457",
+      "kickoff": "2026-10-22T16:45:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "UECL",
+        "name": "Conference League"
+      },
+      "stage": "Fase de liga · Rodada 2",
+      "home": {
+        "name": "Estrela Vermelha",
+        "fullName": "Estrela Vermelha",
+        "tla": null,
+        "crest": null
+      },
+      "away": {
+        "name": "FC Copenhagen",
+        "fullName": "FC Copenhagen",
+        "tla": null,
+        "crest": null
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/estrela-vermelha-x-fc-copenhagen-0162d48d8457.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Clima de caldeirão em Belgrado! Estrela Vermelha x Copenhagen, quinta às 13:45, de graça na Cazé.",
+        "badge": "JOGAÇO",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-fk-jablonec-x-brighton-a2ba29f7981a",
+      "kickoff": "2026-10-22T16:45:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "UECL",
+        "name": "Conference League"
+      },
+      "stage": "Fase de liga · Rodada 2",
+      "home": {
+        "name": "FK Jablonec",
+        "fullName": "FK Jablonec",
+        "tla": null,
+        "crest": null
+      },
+      "away": {
+        "name": "Brighton",
+        "fullName": "Brighton",
+        "tla": null,
+        "crest": "https://crests.football-data.org/397.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/fk-jablonec-x-brighton-a2ba29f7981a.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Davi contra Golias? O Jablonec recebe o Brighton na Conference. Quinta, 13:45, cola com a gente!",
+        "badge": "RODADA",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-celtic-x-celta-vigo-3aafdbdce03e",
+      "kickoff": "2026-10-22T19:00:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "EL",
+        "name": "Europa League"
+      },
+      "stage": "Fase de liga · Rodada 3",
+      "home": {
+        "name": "Celtic",
+        "fullName": "Celtic",
+        "tla": null,
+        "crest": null
+      },
+      "away": {
+        "name": "Celta Vigo",
+        "fullName": "Celta Vigo",
+        "tla": null,
+        "crest": "https://crests.football-data.org/558.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/celtic-x-celta-vigo-3aafdbdce03e.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Celtic x Celta: o duelo de nomes quase gêmeos! Escócia contra Espanha, quinta às 16:00 na Europa League.",
+        "badge": "VALE O PLAY",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-sc-braga-x-gent-0131aec103a4",
+      "kickoff": "2026-10-22T19:00:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "UECL",
+        "name": "Conference League"
+      },
+      "stage": "Fase de liga · Rodada 2",
+      "home": {
+        "name": "SC Braga",
+        "fullName": "SC Braga",
+        "tla": null,
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "away": {
+        "name": "Gent",
+        "fullName": "Gent",
+        "tla": null,
+        "crest": null
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/sc-braga-x-gent-0131aec103a4.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Portugal x Bélgica na Conference: Braga e Gent se enfrentam quinta, 16:00. Chega mais!",
+        "badge": "RODADA",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-ajax-x-atalanta-02b63a4e6eff",
+      "kickoff": "2026-10-22T19:00:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "UECL",
+        "name": "Conference League"
+      },
+      "stage": "Fase de liga · Rodada 2",
+      "home": {
+        "name": "Ajax",
+        "fullName": "Ajax",
+        "tla": null,
+        "crest": "https://crests.football-data.org/678.png"
+      },
+      "away": {
+        "name": "Atalanta",
+        "fullName": "Atalanta",
+        "tla": null,
+        "crest": "https://crests.football-data.org/102.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/ajax-x-atalanta-02b63a4e6eff.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Ajax e Atalanta num jogão de quinta à tarde! Amsterdã recebe a Dea às 16:00, de graça na Cazé.",
+        "badge": "DUELO DE GIGANTES",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-monaco-x-sc-freiburg-cf95953ffab5",
+      "kickoff": "2026-10-22T19:00:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "UECL",
+        "name": "Conference League"
+      },
+      "stage": "Fase de liga · Rodada 2",
+      "home": {
+        "name": "Monaco",
+        "fullName": "Monaco",
+        "tla": null,
+        "crest": "https://crests.football-data.org/548.png"
+      },
+      "away": {
+        "name": "SC Freiburg",
+        "fullName": "SC Freiburg",
+        "tla": null,
+        "crest": "https://crests.football-data.org/17.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/monaco-x-sc-freiburg-cf95953ffab5.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Principado x Floresta Negra: Monaco e Freiburg se cruzam na Conference League às 16h.",
+        "badge": "VALE O PLAY",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-besiktas-x-crystal-palace-cef73a7f43e1",
+      "kickoff": "2026-10-22T19:00:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "EL",
+        "name": "Europa League"
+      },
+      "stage": "Fase de liga · Rodada 3",
+      "home": {
+        "name": "Besiktas",
+        "fullName": "Besiktas",
+        "tla": null,
+        "crest": null
+      },
+      "away": {
+        "name": "Crystal Palace",
+        "fullName": "Crystal Palace",
+        "tla": null,
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/besiktas-x-crystal-palace-cef73a7f43e1.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Quer atmosfera? Istambul ferve com Besiktas x Crystal Palace, quinta às 16:00. Imperdível!",
+        "badge": "IMPERDÍVEL",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-jagiellonia-x-anderlecht-1a6f7c27d81c",
+      "kickoff": "2026-10-22T19:00:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "EL",
+        "name": "Europa League"
+      },
+      "stage": "Fase de liga · Rodada 3",
+      "home": {
+        "name": "Jagiellonia",
+        "fullName": "Jagiellonia",
+        "tla": null,
+        "crest": null
+      },
+      "away": {
+        "name": "Anderlecht",
+        "fullName": "Anderlecht",
+        "tla": null,
+        "crest": null
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/jagiellonia-x-anderlecht-1a6f7c27d81c.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "O gigante belga Anderlecht visita o Jagiellonia na Polônia. Quinta, 16:00, Europa League pra você!",
+        "badge": "VALE O PLAY",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-lillestrom-x-real-sociedad-312d9ef2768c",
+      "kickoff": "2026-10-22T19:00:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "EL",
+        "name": "Europa League"
+      },
+      "stage": "Fase de liga · Rodada 3",
+      "home": {
+        "name": "Lillestrom",
+        "fullName": "Lillestrom",
+        "tla": null,
+        "crest": null
+      },
+      "away": {
+        "name": "Real Sociedad",
+        "fullName": "Real Sociedad",
+        "tla": null,
+        "crest": "https://crests.football-data.org/92.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/lillestrom-x-real-sociedad-312d9ef2768c.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Frio norueguês e futebol basco: Lillestrom recebe a Real Sociedad quinta às 16:00. Vem!",
+        "badge": "RODADA",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fntv-1899-hoffenheim-x-lyon-16e63cc57375",
+      "kickoff": "2026-10-22T19:00:00.000Z",
+      "status": null,
+      "competition": {
+        "emblem": null,
+        "code": "EL",
+        "name": "Europa League"
+      },
+      "stage": "Fase de liga · Rodada 3",
+      "home": {
+        "name": "1899 Hoffenheim",
+        "fullName": "1899 Hoffenheim",
+        "tla": null,
+        "crest": "https://crests.football-data.org/2.png"
+      },
+      "away": {
+        "name": "Lyon",
+        "fullName": "Lyon",
+        "tla": null,
+        "crest": null
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/1899-hoffenheim-x-lyon-16e63cc57375.html",
+      "reconciliation": {
+        "method": "guia"
+      },
+      "copy": {
+        "text": "Alemanha x França na Europa League! Hoffenheim e Lyon medem forças quinta, 16:00, aqui na Cazé.",
         "badge": "JOGAÇO",
         "source": "claude"
       }
@@ -270,10 +641,6 @@
         "tla": null,
         "crest": "https://crests.football-data.org/98.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/bournemouth-x-ac-milan-430f2d112e5e.html",
       "reconciliation": {
         "method": "guia"
@@ -281,42 +648,6 @@
       "copy": {
         "text": "Rossoneri na costa inglesa! Bournemouth encara o gigante Milan pela Europa League, de graça.",
         "badge": "JOGAÇO",
-        "source": "claude"
-      }
-    },
-    {
-      "id": "fntv-monaco-x-sc-freiburg-cf95953ffab5",
-      "kickoff": "2026-10-22T19:00:00.000Z",
-      "status": null,
-      "competition": {
-        "emblem": null,
-        "code": "UECL",
-        "name": "Conference League"
-      },
-      "stage": "Fase de liga · Rodada 2",
-      "home": {
-        "name": "Monaco",
-        "fullName": "Monaco",
-        "tla": null,
-        "crest": "https://crests.football-data.org/548.png"
-      },
-      "away": {
-        "name": "SC Freiburg",
-        "fullName": "SC Freiburg",
-        "tla": null,
-        "crest": "https://crests.football-data.org/17.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/monaco-x-sc-freiburg-cf95953ffab5.html",
-      "reconciliation": {
-        "method": "guia"
-      },
-      "copy": {
-        "text": "Principado x Floresta Negra: Monaco e Freiburg se cruzam na Conference League às 16h.",
-        "badge": "VALE O PLAY",
         "source": "claude"
       }
     },
@@ -341,10 +672,6 @@
         "fullName": "Borussia Mönchengladbach",
         "tla": "BMG",
         "crest": "https://crests.football-data.org/18.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/vfb-stuttgart-x-borussia-m-a5430cb1f43e.html",
       "reconciliation": {
@@ -379,10 +706,6 @@
         "tla": "MAL",
         "crest": "https://crests.football-data.org/84.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/alaves-x-malaga-2a1ee54772ec.html",
       "reconciliation": {
         "method": "api+guia",
@@ -415,10 +738,6 @@
         "fullName": "Elche CF",
         "tla": "ELC",
         "crest": "https://crests.football-data.org/285.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/rayo-vallecano-x-elche-69cec33c6816.html",
       "reconciliation": {
@@ -453,10 +772,6 @@
         "tla": "ELV",
         "crest": "https://crests.football-data.org/719.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/rb-leipzig-x-sv-elversberg-d7b975a4d8a1.html",
       "reconciliation": {
         "method": "api+guia",
@@ -489,10 +804,6 @@
         "fullName": "RCD Espanyol de Barcelona",
         "tla": "ESP",
         "crest": "https://crests.football-data.org/80.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/racing-santander-x-espanyol-dfc3bff49f28.html",
       "reconciliation": {
@@ -527,10 +838,6 @@
         "tla": null,
         "crest": "https://crests.football-data.org/531.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/toulouse-x-estac-troyes-129793d74cb0.html",
       "reconciliation": {
         "method": "guia"
@@ -562,10 +869,6 @@
         "fullName": "AS Roma",
         "tla": "ROM",
         "crest": "https://crests.football-data.org/100.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/napoli-x-roma-f89463cd5d07.html",
       "reconciliation": {
@@ -600,10 +903,6 @@
         "tla": "VIL",
         "crest": "https://crests.football-data.org/94.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/valencia-x-villarreal-59429ce46c7b.html",
       "reconciliation": {
         "method": "api+guia",
@@ -636,10 +935,6 @@
         "fullName": "Paris FC",
         "tla": "PFC",
         "crest": "https://crests.football-data.org/1045.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/lens-x-paris-fc-7e3641cf1208.html",
       "reconciliation": {
@@ -674,10 +969,6 @@
         "tla": "DEP",
         "crest": "https://crests.football-data.org/560.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/atletico-madrid-x-deportivo-la-coruna-d7917b12ae28.html",
       "reconciliation": {
         "method": "api+guia",
@@ -710,10 +1001,6 @@
         "fullName": "SC Corinthians Paulista",
         "tla": "COR",
         "crest": "https://crests.football-data.org/1779.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/vasco-x-corinthians-696cf33da596d.html",
       "reconciliation": {
@@ -748,10 +1035,6 @@
         "tla": "LIL",
         "crest": "https://crests.football-data.org/521.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/monaco-x-lille-050e25a82980.html",
       "reconciliation": {
         "method": "api+guia",
@@ -784,10 +1067,6 @@
         "fullName": "AFC Bournemouth",
         "tla": "BOU",
         "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/manchester-united-x-bournemouth-9293dc5f345a.html",
       "reconciliation": {
@@ -822,10 +1101,6 @@
         "tla": "BET",
         "crest": "https://crests.football-data.org/90.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/celta-vigo-x-real-betis-f03706f40bd1.html",
       "reconciliation": {
         "method": "api+guia",
@@ -858,10 +1133,6 @@
         "fullName": "Le Havre AC",
         "tla": "HAC",
         "crest": "https://crests.football-data.org/533.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/marseille-x-le-havre-ea89cd7c23ea.html",
       "reconciliation": {
@@ -896,10 +1167,6 @@
         "tla": "RC ",
         "crest": "https://crests.football-data.org/576.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/rennes-x-strasbourg-98c3d034a4bf.html",
       "reconciliation": {
         "method": "api+guia",
@@ -932,10 +1199,6 @@
         "fullName": "Le Mans FC",
         "tla": "LMF",
         "crest": "https://crests.football-data.org/535.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/auxerre-x-le-mans-8073b9a7d5bf.html",
       "reconciliation": {
@@ -970,10 +1233,6 @@
         "tla": "FCL",
         "crest": "https://crests.football-data.org/525.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/angers-x-lorient-eb6e5dfba533.html",
       "reconciliation": {
         "method": "api+guia",
@@ -1006,10 +1265,6 @@
         "fullName": "Levante UD",
         "tla": "LEV",
         "crest": "https://crests.football-data.org/88.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/real-sociedad-x-levante-b543006ebb62.html",
       "reconciliation": {
@@ -1044,10 +1299,6 @@
         "tla": "LYO",
         "crest": "https://crests.football-data.org/523.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/psg-x-lyon-16d838a49afa.html",
       "reconciliation": {
         "method": "api+guia",
@@ -1081,10 +1332,6 @@
         "tla": "RMA",
         "crest": "https://crests.football-data.org/86.png"
       },
-      "score": {
-        "home": null,
-        "away": null
-      },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/barcelona-x-real-madrid-1b21a85dcf7f.html",
       "reconciliation": {
         "method": "api+guia",
@@ -1093,6 +1340,39 @@
       "copy": {
         "text": "O maior clássico do planeta é na Cazé! Barcelona x Real Madrid, domingo às 17h, de graça!",
         "badge": "CLÁSSICO",
+        "source": "claude"
+      }
+    },
+    {
+      "id": "fd-564721",
+      "kickoff": "2026-10-26T20:00:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "PD",
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "stage": "Rodada 10",
+      "home": {
+        "name": "Sevilla",
+        "fullName": "Sevilla FC",
+        "tla": "SEV",
+        "crest": "https://crests.football-data.org/559.png"
+      },
+      "away": {
+        "name": "Osasuna",
+        "fullName": "CA Osasuna",
+        "tla": "OSA",
+        "crest": "https://crests.football-data.org/79.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/sevilla-x-osasuna-22f580faae88.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Segunda-feira com LaLiga: Sevilla recebe o Osasuna no Sánchez-Pizjuán às 17:00. Bora assistir!",
+        "badge": "JOGAÇO",
         "source": "claude"
       }
     },
@@ -1117,10 +1397,6 @@
         "fullName": "PSG",
         "tla": null,
         "crest": "https://crests.football-data.org/524.png"
-      },
-      "score": {
-        "home": null,
-        "away": null
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/le-havre-x-psg-da0499d5e5ca.html",
       "reconciliation": {

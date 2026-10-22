@@ -187,5 +187,96 @@
     "source": "claude",
     "model": "claude-opus-5-5",
     "createdAt": "2026-10-21T17:50:53.342Z"
+  },
+  "2026-10-22|lech poznan|sunderland": {
+    "chamada": "Os Black Cats desembarcam na Polônia pra encarar o Lech Poznan. Quinta, 13:45, Europa League na faixa!",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|sturm graz|marseille": {
+    "chamada": "Marseille vai até a Áustria encarar o Sturm Graz. Quinta às 13:45, com o OM em ação na Cazé!",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|getafe|fc lugano": {
+    "chamada": "Tem Espanha x Suíça na Conference: Getafe recebe o Lugano quinta, 13:45. Bora?",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|estrela vermelha|fc copenhagen": {
+    "chamada": "Clima de caldeirão em Belgrado! Estrela Vermelha x Copenhagen, quinta às 13:45, de graça na Cazé.",
+    "selo": "JOGAÇO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|fk jablonec|brighton": {
+    "chamada": "Davi contra Golias? O Jablonec recebe o Brighton na Conference. Quinta, 13:45, cola com a gente!",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|celtic|celta vigo": {
+    "chamada": "Celtic x Celta: o duelo de nomes quase gêmeos! Escócia contra Espanha, quinta às 16:00 na Europa League.",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|sc braga|gent": {
+    "chamada": "Portugal x Bélgica na Conference: Braga e Gent se enfrentam quinta, 16:00. Chega mais!",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|ajax|atalanta": {
+    "chamada": "Ajax e Atalanta num jogão de quinta à tarde! Amsterdã recebe a Dea às 16:00, de graça na Cazé.",
+    "selo": "DUELO DE GIGANTES",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|besiktas|crystal palace": {
+    "chamada": "Quer atmosfera? Istambul ferve com Besiktas x Crystal Palace, quinta às 16:00. Imperdível!",
+    "selo": "IMPERDÍVEL",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|jagiellonia|anderlecht": {
+    "chamada": "O gigante belga Anderlecht visita o Jagiellonia na Polônia. Quinta, 16:00, Europa League pra você!",
+    "selo": "VALE O PLAY",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|lillestrom|real sociedad": {
+    "chamada": "Frio norueguês e futebol basco: Lillestrom recebe a Real Sociedad quinta às 16:00. Vem!",
+    "selo": "RODADA",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-22|1899 hoffenheim|lyon": {
+    "chamada": "Alemanha x França na Europa League! Hoffenheim e Lyon medem forças quinta, 16:00, aqui na Cazé.",
+    "selo": "JOGAÇO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
+  },
+  "2026-10-26|sevilla|osasuna": {
+    "chamada": "Segunda-feira com LaLiga: Sevilla recebe o Osasuna no Sánchez-Pizjuán às 17:00. Bora assistir!",
+    "selo": "JOGAÇO",
+    "source": "claude",
+    "model": "claude-opus-5-5",
+    "createdAt": "2026-10-22T14:42:37.151Z"
   }
 }
