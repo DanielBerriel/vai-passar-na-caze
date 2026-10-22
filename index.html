@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vai Passar na Cazé · conceito por Daniel Berriel</title>
-  <meta name="description" content="Conceito de produto para a LiveMode: a agenda de todos os jogos que a CazéTV vai transmitir, montada sozinha por um pipeline com API, scraping e IA generativa.">
+  <meta name="description" content="Conceito de produto para a LiveMode: a agenda de todos os jogos que a CazéTV vai transmitir, montada sozinha por um pipeline com API e scraping.">
   <meta name="theme-color" content="#0a0a0c">
 
   <link rel="canonical" href="https://danielberriel.github.io/vai-passar-na-caze/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://danielberriel.github.io/vai-passar-na-caze/">
   <meta property="og:title" content="Vai Passar na Cazé · conceito por Daniel Berriel">
-  <meta property="og:description" content="Todo jogo que passa na CazéTV, num lugar só. Montado por um robô com API, scraping e IA: um portfólio de AI Engineering para a LiveMode.">
+  <meta property="og:description" content="Todo jogo que passa na CazéTV, num lugar só. Montado por um robô com API e scraping: um portfólio de AI Engineering para a LiveMode.">
   <meta property="og:image" content="https://danielberriel.github.io/vai-passar-na-caze/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -54,7 +54,7 @@
           <h1 class="display">Todo jogo que passa na Cazé, <span class="hl">num lugar só.</span></h1>
           <p class="lead">
             De graça, no YouTube, do jeito que só a CazéTV faz. Esta página cruza o calendário oficial
-            com guias de programação, e uma IA escreve a chamada de cada jogo.
+            com guias de programação para descobrir o que vai passar.
           </p>
           <ul class="hero-stats" id="hero-stats" aria-label="Resumo da agenda">
             <li class="skeleton-text">carregando agenda…</li>
@@ -122,8 +122,8 @@
           </li>
           <li class="step">
             <span class="step-num">04</span>
-            <h3>Chamadas com IA</h3>
-            <p><strong>Claude</strong> (Anthropic) escreve cada chamada na voz da marca, com regras contra fatos inventados e saída em JSON validado.</p>
+            <h3>Chamadas</h3>
+            <p>Cada jogo ganha uma chamada na voz da marca, a partir de <strong>templates</strong>. O mesmo jogo recebe sempre a mesma frase.</p>
             <p class="step-metric" data-metric="copy">…</p>
           </li>
           <li class="step">
@@ -141,18 +141,16 @@
             <p>
               "Hoje", "Amanhã", "próximo jogo", "ao vivo" e a contagem regressiva são calculados no navegador de quem abre
               a página, a partir dos horários que o robô já deixou salvos para os próximos dias. Por isso ele não precisa
-              rodar toda hora: roda uma vez por dia, só para descobrir jogos novos e mudanças de horário. E a IA só escreve
-              para o jogo que ainda não tem chamada; o resto vem do cache.
+              rodar toda hora: roda uma vez por dia, só para descobrir jogos novos e mudanças de horário.
             </p>
             <p>
               O resultado é que o custo não cresce com a audiência: 10 ou 10 mil pessoas abrindo a página custam exatamente o mesmo.
             </p>
-            <p class="cost-live" data-metric="cost" hidden></p>
           </div>
           <ul class="cost-facts">
             <li><strong>1x</strong><span>por dia o robô roda</span></li>
             <li><strong>0</strong><span>chamadas de API quando alguém abre a página</span></li>
-            <li><strong>≤ 1</strong><span>chamada à IA por dia, só para jogos novos</span></li>
+            <li><strong>~10</strong><span>dias de jogos salvos a cada execução</span></li>
             <li><strong>R$ 0</strong><span>de servidor e banco de dados</span></li>
           </ul>
         </div>
@@ -162,11 +160,11 @@
           <ul>
             <li>
               <strong>Se uma fonte cai, a página não cai.</strong>
-              Sem API, o guia sustenta a agenda. Sem IA, entram chamadas de template. Se o scraping falhar, a última versão boa continua no ar.
+              Sem API, o guia sustenta a agenda. Se o scraping falhar, a última versão boa continua no ar.
             </li>
             <li>
-              <strong>IA com guardrails.</strong>
-              O modelo só usa os fatos que recebe: nada de sequência de vitórias, desfalques ou tabela inventados com a marca em cima.
+              <strong>Dois jogos no mesmo horário não se confundem.</strong>
+              Cada jogo do guia casa com no máximo um jogo da API, então rodadas com partidas simultâneas da mesma liga saem certas.
             </li>
             <li>
               <strong>Escudo certo ou nenhum.</strong>
@@ -249,8 +247,7 @@
       </p>
       <p class="footer-sources">
         Dados de jogos e escudos: <a href="https://www.football-data.org" target="_blank" rel="noopener">football-data.org</a> ·
-        Transmissões: <a href="https://www.futebolnatv.com.br" target="_blank" rel="noopener">futebolnatv.com.br</a> ·
-        Chamadas: Claude (Anthropic)
+        Transmissões: <a href="https://www.futebolnatv.com.br" target="_blank" rel="noopener">futebolnatv.com.br</a>
       </p>
     </div>
   </footer>

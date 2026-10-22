@@ -2,7 +2,7 @@
   "name": "vai-passar-na-caze",
   "version": "1.0.0",
   "private": true,
-  "description": "Conceito de portfólio: agenda inteligente de jogos da CazéTV (football-data.org + scraping + Claude).",
+  "description": "Conceito de portfólio: agenda inteligente de jogos da CazéTV (football-data.org + scraping).",
   "type": "module",
   "scripts": {
     "dados": "node --env-file-if-exists=.env pipeline/run.mjs",
@@ -13,7 +13,6 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.135.0",
     "cheerio": "^1.2.0"
   }
 }

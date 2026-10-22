@@ -1,11 +1,11 @@
 // Pipeline entry point: `npm run dados`
 //
 //   futebolnatv (who broadcasts)  ─┐
-//                                  ├─> reconcile ─> Claude copy ─> data/jogos.json
+//                                  ├─> reconcile ─> copy ─> data/jogos.json
 //   football-data.org (fixtures)  ─┘
 //
-// Env: FOOTBALL_DATA_TOKEN, ANTHROPIC_API_KEY (both optional; the page degrades
-// gracefully), FOOTBALL_DATA_FIXTURE (path to a saved API response, for offline runs),
+// Env: FOOTBALL_DATA_TOKEN (optional; without it the guide alone drives the page),
+// FOOTBALL_DATA_FIXTURE (path to a saved API response, for offline runs),
 // PIPELINE_OUT_DIR (write somewhere other than ./data).
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -14,17 +14,15 @@ import { scrapeCazeTVSchedule } from "./sources/futebolnatv.mjs";
 import { fetchMatches, normalizeMatch } from "./sources/football-data.mjs";
 import { reconcile } from "./match.mjs";
 import { loadCrestIndex, findCrest } from "./crests.mjs";
-import { buildCopy, copyKey } from "./copy.mjs";
+import { templateCopy } from "./copy.mjs";
 import { localDate, addDays } from "./lib/time.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA_DIR = process.env.PIPELINE_OUT_DIR ? path.resolve(process.env.PIPELINE_OUT_DIR) : path.join(ROOT, "data");
 const OUTPUT_FILE = path.join(DATA_DIR, "jogos.json");
-const CACHE_FILE = path.join(DATA_DIR, "copy-cache.json");
 const CREST_FILE = path.join(DATA_DIR, "crests.json");
 
 const KEEP_STARTED_FOR_MS = 3 * 60 * 60 * 1000;
-const CACHE_RETENTION_DAYS = 7;
 
 // The guide uses Portuguese league names; show the same names the API path uses.
 const GUIDE_COMPETITIONS = {
@@ -64,14 +62,6 @@ function guideStage(stage) {
 function guideTeam(raw) {
   const name = GUIDE_TEAM_FIXES[raw] ?? raw;
   return { name, fullName: name, tla: null, crest: null };
-}
-
-async function readJson(file, fallback) {
-  try {
-    return JSON.parse(await fs.readFile(file, "utf8"));
-  } catch {
-    return fallback;
-  }
 }
 
 async function loadFixtures({ today, log }) {
@@ -175,18 +165,8 @@ export async function run({ now = new Date(), log = console.log } = {}) {
   const withCrest = teams.filter((t) => t.crest).length;
   log(`  escudos: ${withCrest}/${teams.length} times`);
 
-  log("4/4 Chamadas (Claude)");
-  const cache = await readJson(CACHE_FILE, {});
-  const { byKey, stats: copyStats } = await buildCopy(broadcasts, cache, { log });
-  for (const b of broadcasts) {
-    const c = byKey[copyKey(b)];
-    b.copy = { text: c.chamada, badge: c.selo, source: c.source };
-  }
-
-  const oldestKept = addDays(today, -CACHE_RETENTION_DAYS);
-  const prunedCache = Object.fromEntries(
-    Object.entries(cache).filter(([key]) => key.slice(0, 10) >= oldestKept),
-  );
+  log("4/4 Chamadas");
+  for (const b of broadcasts) b.copy = templateCopy(b);
 
   const output = {
     generatedAt: now.toISOString(),
@@ -194,7 +174,6 @@ export async function run({ now = new Date(), log = console.log } = {}) {
     sources: {
       guide: { name: "futebolnatv.com.br", pages: guide.diagnostics },
       fixtures: { name: "football-data.org", status: fixtures.status, error: fixtures.error ?? null },
-      copy: { model: copyStats.model, error: copyStats.error, usage: copyStats.usage },
     },
     stats: {
       guidePagesRead: guide.diagnostics.filter((d) => d.ok).length,
@@ -206,16 +185,12 @@ export async function run({ now = new Date(), log = console.log } = {}) {
       guideOnly: broadcasts.filter((b) => b.reconciliation.method === "guia").length,
       teamsWithCrest: withCrest,
       teamsShown: teams.length,
-      copyByClaude: broadcasts.filter((b) => b.copy.source === "claude").length,
-      copyNewThisRun: copyStats.generated,
-      copyFromTemplate: copyStats.template,
     },
     broadcasts,
   };
 
   await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
   await fs.writeFile(OUTPUT_FILE, JSON.stringify(output, null, 2) + "\n");
-  await fs.writeFile(CACHE_FILE, JSON.stringify(prunedCache, null, 2) + "\n");
   log(`OK: ${broadcasts.length} transmissões em ${path.relative(ROOT, OUTPUT_FILE) || OUTPUT_FILE}`);
   return output;
 }

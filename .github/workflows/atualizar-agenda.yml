@@ -40,14 +40,13 @@ jobs:
       - name: Testes
         run: npm test
 
-      - name: Pipeline (guia + API + Claude)
+      - name: Pipeline (guia + API)
         if: github.event_name != 'push'
         # Se as fontes falharem, o site é publicado com os últimos dados bons.
         continue-on-error: true
         run: npm run dados
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Versionar dados
         if: github.event_name != 'push'

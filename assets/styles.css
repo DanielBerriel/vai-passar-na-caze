@@ -369,10 +369,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .cost-copy h3 { font-size: clamp(20px, 2.4vw, 26px); font-weight: 800; line-height: 1.25; margin-bottom: 14px; }
 .cost-copy p { color: var(--muted); font-size: 15px; }
 .cost-copy p + p { margin-top: 10px; }
-.cost-copy .cost-live {
-  margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border);
-  color: var(--text); font-size: 13.5px; font-weight: 700;
-}
 .cost-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .cost-facts li { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
 .cost-facts strong { display: block; font-family: var(--font-display); font-weight: 400; font-size: 34px; line-height: 1.05; color: var(--accent); }
