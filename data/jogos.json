@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T14:13:38.477Z",
+  "generatedAt": "2026-10-24T13:18:18.685Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -8,14 +8,14 @@
         {
           "page": "/jogos-hoje",
           "ok": true,
-          "parsed": 22,
-          "cazetv": 2
+          "parsed": 70,
+          "cazetv": 8
         },
         {
           "page": "/jogos-amanha",
           "ok": true,
-          "parsed": 70,
-          "cazetv": 8
+          "parsed": 57,
+          "cazetv": 12
         },
         {
           "page": "/canal/cazetv",
@@ -57,13 +57,13 @@
           "page": "/liga/campeonato-alemao-x5kmzzp7ug",
           "ok": true,
           "parsed": 10,
-          "cazetv": 2
+          "cazetv": 1
         },
         {
           "page": "/liga/campeonato-frances-5na39ifvp5",
           "ok": true,
           "parsed": 10,
-          "cazetv": 9
+          "cazetv": 10
         },
         {
           "page": "/liga/super-copa-da-franca-12xeirjuqp",
@@ -118,8 +118,8 @@
   "stats": {
     "guidePagesRead": 17,
     "leaguesScanned": 13,
-    "guideMatchesRead": 142,
-    "apiMatchesRead": 115,
+    "guideMatchesRead": 159,
+    "apiMatchesRead": 158,
     "cazetvBroadcasts": 24,
     "reconciled": 23,
     "guideOnly": 1,
@@ -127,70 +127,6 @@
     "teamsShown": 48
   },
   "broadcasts": [
-    {
-      "id": "fd-565833",
-      "kickoff": "2026-10-23T18:30:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "BL1",
-        "name": "Bundesliga",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "stage": "Rodada 7",
-      "home": {
-        "name": "VfB Stuttgart",
-        "fullName": "VfB Stuttgart",
-        "tla": "VFB",
-        "crest": "https://crests.football-data.org/10.png"
-      },
-      "away": {
-        "name": "Borussia M'gladbach",
-        "fullName": "Borussia Mönchengladbach",
-        "tla": "BMG",
-        "crest": "https://crests.football-data.org/18.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/vfb-stuttgart-x-borussia-m-a5430cb1f43e.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Marca no calendário: VfB Stuttgart x Borussia M'gladbach, Bundesliga ao vivo na CazéTV.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-564719",
-      "kickoff": "2026-10-23T19:00:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "PD",
-        "name": "LaLiga",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "stage": "Rodada 10",
-      "home": {
-        "name": "Alavés",
-        "fullName": "Deportivo Alavés",
-        "tla": "ALA",
-        "crest": "https://crests.football-data.org/263.png"
-      },
-      "away": {
-        "name": "Malaga",
-        "fullName": "Málaga CF",
-        "tla": "MAL",
-        "crest": "https://crests.football-data.org/84.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/alaves-x-malaga-2a1ee54772ec.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Alavés recebe Malaga e você assiste com a gente, sem pagar nada.",
-        "badge": "VALE O PLAY"
-      }
-    },
     {
       "id": "fd-564718",
       "kickoff": "2026-10-24T12:00:00.000Z",
@@ -891,6 +827,70 @@
       },
       "copy": {
         "text": "Marca no calendário: Le Havre x PSG, Ligue 1 ao vivo na CazéTV.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-564737",
+      "kickoff": "2026-10-30T20:00:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "PD",
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "stage": "Rodada 11",
+      "home": {
+        "name": "Villarreal",
+        "fullName": "Villarreal CF",
+        "tla": "VIL",
+        "crest": "https://crests.football-data.org/94.png"
+      },
+      "away": {
+        "name": "Espanyol",
+        "fullName": "RCD Espanyol de Barcelona",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/80.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/villarreal-x-espanyol-1f05b7bfd7c2.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Marca no calendário: Villarreal x Espanyol, LaLiga ao vivo na CazéTV.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-559639",
+      "kickoff": "2026-10-30T20:05:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "stage": "Rodada 9",
+      "home": {
+        "name": "Lille",
+        "fullName": "Lille OSC",
+        "tla": "LIL",
+        "crest": "https://crests.football-data.org/521.png"
+      },
+      "away": {
+        "name": "Lens",
+        "fullName": "Racing Club de Lens",
+        "tla": "RCL",
+        "crest": "https://crests.football-data.org/546.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/lille-x-lens-668ce82c9914.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Marca no calendário: Lille x Lens, Ligue 1 ao vivo na CazéTV.",
         "badge": "VALE O PLAY"
       }
     }
