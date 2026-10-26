@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T13:42:06.803Z",
+  "generatedAt": "2026-10-26T16:05:58.956Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -8,14 +8,14 @@
         {
           "page": "/jogos-hoje",
           "ok": true,
-          "parsed": 56,
-          "cazetv": 11
+          "parsed": 12,
+          "cazetv": 2
         },
         {
           "page": "/jogos-amanha",
           "ok": true,
-          "parsed": 12,
-          "cazetv": 2
+          "parsed": 9,
+          "cazetv": 1
         },
         {
           "page": "/canal/cazetv",
@@ -63,7 +63,7 @@
           "page": "/liga/campeonato-frances-5na39ifvp5",
           "ok": true,
           "parsed": 10,
-          "cazetv": 10
+          "cazetv": 9
         },
         {
           "page": "/liga/super-copa-da-franca-12xeirjuqp",
@@ -99,7 +99,7 @@
           "page": "/liga/campeonato-ingles-diegw7eeiu",
           "ok": true,
           "parsed": 10,
-          "cazetv": 1
+          "cazetv": 0
         },
         {
           "page": "/liga/campeonato-italiano-91ext4vdu4",
@@ -118,367 +118,15 @@
   "stats": {
     "guidePagesRead": 17,
     "leaguesScanned": 13,
-    "guideMatchesRead": 123,
-    "apiMatchesRead": 171,
-    "cazetvBroadcasts": 23,
-    "reconciled": 23,
+    "guideMatchesRead": 95,
+    "apiMatchesRead": 136,
+    "cazetvBroadcasts": 21,
+    "reconciled": 21,
     "guideOnly": 0,
-    "teamsWithCrest": 46,
-    "teamsShown": 46
+    "teamsWithCrest": 42,
+    "teamsShown": 42
   },
   "broadcasts": [
-    {
-      "id": "fd-564720",
-      "kickoff": "2026-10-25T13:00:00.000Z",
-      "status": "IN_PLAY",
-      "competition": {
-        "code": "PD",
-        "name": "LaLiga",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "stage": "Rodada 10",
-      "home": {
-        "name": "Athletic Club",
-        "fullName": "Athletic Club",
-        "tla": "ATH",
-        "crest": "https://crests.football-data.org/77.png"
-      },
-      "away": {
-        "name": "Getafe",
-        "fullName": "Getafe CF",
-        "tla": "GET",
-        "crest": "https://crests.football-data.org/82.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/athletic-club-x-getafe-3fab309f7507.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Athletic Club recebe Getafe e você assiste com a gente, sem pagar nada.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-559650",
-      "kickoff": "2026-10-25T14:00:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "FL1",
-        "name": "Ligue 1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "stage": "Rodada 8",
-      "home": {
-        "name": "Monaco",
-        "fullName": "AS Monaco FC",
-        "tla": "ASM",
-        "crest": "https://crests.football-data.org/548.png"
-      },
-      "away": {
-        "name": "Lille",
-        "fullName": "Lille OSC",
-        "tla": "LIL",
-        "crest": "https://crests.football-data.org/521.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/monaco-x-lille-050e25a82980.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Marca no calendário: Monaco x Lille, Ligue 1 ao vivo na CazéTV.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-560615",
-      "kickoff": "2026-10-25T14:00:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "PL",
-        "name": "Premier League",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "stage": "Rodada 8",
-      "home": {
-        "name": "Manchester United",
-        "fullName": "Manchester United FC",
-        "tla": "MUN",
-        "crest": "https://crests.football-data.org/66.png"
-      },
-      "away": {
-        "name": "Bournemouth",
-        "fullName": "AFC Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/manchester-united-x-bournemouth-9293dc5f345a.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Manchester United x Bournemouth, Premier League. Bola rolando de graça, é só dar o play.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-564725",
-      "kickoff": "2026-10-25T15:15:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "PD",
-        "name": "LaLiga",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "stage": "Rodada 10",
-      "home": {
-        "name": "Celta Vigo",
-        "fullName": "RC Celta de Vigo",
-        "tla": "CEL",
-        "crest": "https://crests.football-data.org/558.png"
-      },
-      "away": {
-        "name": "Real Betis",
-        "fullName": "Real Betis Balompié",
-        "tla": "BET",
-        "crest": "https://crests.football-data.org/90.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/celta-vigo-x-real-betis-f03706f40bd1.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Marca no calendário: Celta Vigo x Real Betis, LaLiga ao vivo na CazéTV.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-559649",
-      "kickoff": "2026-10-25T16:15:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "FL1",
-        "name": "Ligue 1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "stage": "Rodada 8",
-      "home": {
-        "name": "Marseille",
-        "fullName": "Olympique de Marseille",
-        "tla": "MAR",
-        "crest": "https://crests.football-data.org/516.png"
-      },
-      "away": {
-        "name": "Le Havre",
-        "fullName": "Le Havre AC",
-        "tla": "HAC",
-        "crest": "https://crests.football-data.org/533.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/marseille-x-le-havre-ea89cd7c23ea.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Marseille x Le Havre, Ligue 1. Bola rolando de graça, é só dar o play.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-559651",
-      "kickoff": "2026-10-25T16:15:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "FL1",
-        "name": "Ligue 1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "stage": "Rodada 8",
-      "home": {
-        "name": "Rennes",
-        "fullName": "Stade Rennais FC 1901",
-        "tla": "REN",
-        "crest": "https://crests.football-data.org/529.png"
-      },
-      "away": {
-        "name": "Strasbourg",
-        "fullName": "RC Strasbourg Alsace",
-        "tla": "RC ",
-        "crest": "https://crests.football-data.org/576.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/rennes-x-strasbourg-98c3d034a4bf.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Rennes recebe Strasbourg e você assiste com a gente, sem pagar nada.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-559655",
-      "kickoff": "2026-10-25T16:15:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "FL1",
-        "name": "Ligue 1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "stage": "Rodada 8",
-      "home": {
-        "name": "Toulouse",
-        "fullName": "Toulouse FC",
-        "tla": "TOU",
-        "crest": "https://crests.football-data.org/511.png"
-      },
-      "away": {
-        "name": "Estac Troyes",
-        "fullName": "ES Troyes AC",
-        "tla": "ETR",
-        "crest": "https://crests.football-data.org/531.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/toulouse-x-estac-troyes-129793d74cb0.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Marca no calendário: Toulouse x Estac Troyes, Ligue 1 ao vivo na CazéTV.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-559656",
-      "kickoff": "2026-10-25T16:15:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "FL1",
-        "name": "Ligue 1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "stage": "Rodada 8",
-      "home": {
-        "name": "Auxerre",
-        "fullName": "AJ Auxerre",
-        "tla": "AJA",
-        "crest": "https://crests.football-data.org/519.png"
-      },
-      "away": {
-        "name": "Le Mans",
-        "fullName": "Le Mans FC",
-        "tla": "LMF",
-        "crest": "https://crests.football-data.org/535.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/auxerre-x-le-mans-8073b9a7d5bf.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Tem Ligue 1 na faixa! Auxerre x Le Mans, ao vivo no YouTube.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-559653",
-      "kickoff": "2026-10-25T16:15:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "FL1",
-        "name": "Ligue 1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "stage": "Rodada 8",
-      "home": {
-        "name": "Angers",
-        "fullName": "Angers SCO",
-        "tla": "ANG",
-        "crest": "https://crests.football-data.org/532.png"
-      },
-      "away": {
-        "name": "Lorient",
-        "fullName": "FC Lorient",
-        "tla": "FCL",
-        "crest": "https://crests.football-data.org/525.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/angers-x-lorient-eb6e5dfba533.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 0.95
-      },
-      "copy": {
-        "text": "Marca no calendário: Angers x Lorient, Ligue 1 ao vivo na CazéTV.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-564726",
-      "kickoff": "2026-10-25T17:30:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "PD",
-        "name": "LaLiga",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "stage": "Rodada 10",
-      "home": {
-        "name": "Real Sociedad",
-        "fullName": "Real Sociedad de Fútbol",
-        "tla": "RSO",
-        "crest": "https://crests.football-data.org/92.png"
-      },
-      "away": {
-        "name": "Levante",
-        "fullName": "Levante UD",
-        "tla": "LEV",
-        "crest": "https://crests.football-data.org/88.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/real-sociedad-x-levante-b543006ebb62.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Separa o lanche: Real Sociedad e Levante se enfrentam e a Cazé transmite ao vivo.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fd-564723",
-      "kickoff": "2026-10-25T20:00:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "PD",
-        "name": "LaLiga",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "stage": "Rodada 10",
-      "home": {
-        "name": "Barcelona",
-        "fullName": "FC Barcelona",
-        "tla": "FCB",
-        "crest": "https://crests.football-data.org/81.png"
-      },
-      "away": {
-        "name": "Real Madrid",
-        "fullName": "Real Madrid CF",
-        "tla": "RMA",
-        "crest": "https://crests.football-data.org/86.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/barcelona-x-real-madrid-1b21a85dcf7f.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Barcelona recebe Real Madrid e você assiste com a gente, sem pagar nada.",
-        "badge": "VALE O PLAY"
-      }
-    },
     {
       "id": "fd-559648",
       "kickoff": "2026-10-26T19:30:00.000Z",
@@ -832,6 +480,70 @@
       }
     },
     {
+      "id": "fd-559643",
+      "kickoff": "2026-10-31T19:45:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "stage": "Rodada 9",
+      "home": {
+        "name": "Estac Troyes",
+        "fullName": "ES Troyes AC",
+        "tla": "ETR",
+        "crest": "https://crests.football-data.org/531.png"
+      },
+      "away": {
+        "name": "Le Mans",
+        "fullName": "Le Mans FC",
+        "tla": "LMF",
+        "crest": "https://crests.football-data.org/535.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/estac-troyes-x-le-mans-0c08a4738059.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Tem Ligue 1 na faixa! Estac Troyes x Le Mans, ao vivo no YouTube.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-559640",
+      "kickoff": "2026-10-31T19:45:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "stage": "Rodada 9",
+      "home": {
+        "name": "Lyon",
+        "fullName": "Olympique Lyonnais",
+        "tla": "LYO",
+        "crest": "https://crests.football-data.org/523.png"
+      },
+      "away": {
+        "name": "Angers",
+        "fullName": "Angers SCO",
+        "tla": "ANG",
+        "crest": "https://crests.football-data.org/532.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/lyon-x-angers-e902d0fcca46.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 0.9
+      },
+      "copy": {
+        "text": "Lyon recebe Angers e você assiste com a gente, sem pagar nada.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
       "id": "fd-564732",
       "kickoff": "2026-10-31T20:00:00.000Z",
       "status": "TIMED",
@@ -860,6 +572,230 @@
       },
       "copy": {
         "text": "Marca no calendário: Barcelona x Alavés, LaLiga ao vivo na CazéTV.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-564733",
+      "kickoff": "2026-11-01T13:00:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "PD",
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "stage": "Rodada 11",
+      "home": {
+        "name": "Getafe",
+        "fullName": "Getafe CF",
+        "tla": "GET",
+        "crest": "https://crests.football-data.org/82.png"
+      },
+      "away": {
+        "name": "Sevilla",
+        "fullName": "Sevilla FC",
+        "tla": "SEV",
+        "crest": "https://crests.football-data.org/559.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/getafe-x-sevilla-bceca2a47b3b.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Getafe recebe Sevilla e você assiste com a gente, sem pagar nada.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-559647",
+      "kickoff": "2026-11-01T14:00:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "stage": "Rodada 9",
+      "home": {
+        "name": "Strasbourg",
+        "fullName": "RC Strasbourg Alsace",
+        "tla": "RC ",
+        "crest": "https://crests.football-data.org/576.png"
+      },
+      "away": {
+        "name": "Auxerre",
+        "fullName": "AJ Auxerre",
+        "tla": "AJA",
+        "crest": "https://crests.football-data.org/519.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/strasbourg-x-auxerre-6f95eefe65db.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Strasbourg x Auxerre, Ligue 1. Bola rolando de graça, é só dar o play.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-564734",
+      "kickoff": "2026-11-01T15:15:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "PD",
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "stage": "Rodada 11",
+      "home": {
+        "name": "Racing Santander",
+        "fullName": "Real Racing Club de Santander",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/5335.png"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "fullName": "Real Madrid CF",
+        "tla": "RMA",
+        "crest": "https://crests.football-data.org/86.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/racing-santander-x-real-madrid-8acbd11a2ef7.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 0.95
+      },
+      "copy": {
+        "text": "Marca no calendário: Racing Santander x Real Madrid, LaLiga ao vivo na CazéTV.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-559642",
+      "kickoff": "2026-11-01T16:15:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "stage": "Rodada 9",
+      "home": {
+        "name": "Paris FC",
+        "fullName": "Paris FC",
+        "tla": "PFC",
+        "crest": "https://crests.football-data.org/1045.png"
+      },
+      "away": {
+        "name": "Monaco",
+        "fullName": "AS Monaco FC",
+        "tla": "ASM",
+        "crest": "https://crests.football-data.org/548.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/paris-fc-x-monaco-5b97d6c0bfdb.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Tem Ligue 1 na faixa! Paris FC x Monaco, ao vivo no YouTube.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-564728",
+      "kickoff": "2026-11-01T17:30:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "PD",
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "stage": "Rodada 11",
+      "home": {
+        "name": "Elche",
+        "fullName": "Elche CF",
+        "tla": "ELC",
+        "crest": "https://crests.football-data.org/285.png"
+      },
+      "away": {
+        "name": "Valencia",
+        "fullName": "Valencia CF",
+        "tla": "VAL",
+        "crest": "https://crests.football-data.org/95.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/elche-x-valencia-8cc79fb2d820.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Elche recebe Valencia e você assiste com a gente, sem pagar nada.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-559645",
+      "kickoff": "2026-11-01T19:45:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "stage": "Rodada 9",
+      "home": {
+        "name": "Marseille",
+        "fullName": "Olympique de Marseille",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/516.png"
+      },
+      "away": {
+        "name": "Toulouse",
+        "fullName": "Toulouse FC",
+        "tla": "TOU",
+        "crest": "https://crests.football-data.org/511.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/marseille-x-toulouse-939f35458e2b.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Tem Ligue 1 na faixa! Marseille x Toulouse, ao vivo no YouTube.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-564729",
+      "kickoff": "2026-11-01T20:00:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "PD",
+        "name": "LaLiga",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "stage": "Rodada 11",
+      "home": {
+        "name": "Athletic Club",
+        "fullName": "Athletic Club",
+        "tla": "ATH",
+        "crest": "https://crests.football-data.org/77.png"
+      },
+      "away": {
+        "name": "Real Sociedad",
+        "fullName": "Real Sociedad de Fútbol",
+        "tla": "RSO",
+        "crest": "https://crests.football-data.org/92.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/athletic-club-x-real-sociedad-fcdd11381033.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Athletic Club recebe Real Sociedad e você assiste com a gente, sem pagar nada.",
         "badge": "VALE O PLAY"
       }
     }
