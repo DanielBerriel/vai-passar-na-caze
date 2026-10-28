@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T15:19:49.028Z",
+  "generatedAt": "2026-10-28T15:58:53.314Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -8,14 +8,14 @@
         {
           "page": "/jogos-hoje",
           "ok": true,
-          "parsed": 9,
+          "parsed": 40,
           "cazetv": 1
         },
         {
           "page": "/jogos-amanha",
           "ok": true,
-          "parsed": 40,
-          "cazetv": 1
+          "parsed": 17,
+          "cazetv": 0
         },
         {
           "page": "/canal/cazetv",
@@ -105,7 +105,7 @@
           "page": "/liga/campeonato-italiano-91ext4vdu4",
           "ok": true,
           "parsed": 10,
-          "cazetv": 1
+          "cazetv": 0
         }
       ]
     },
@@ -118,47 +118,15 @@
   "stats": {
     "guidePagesRead": 17,
     "leaguesScanned": 13,
-    "guideMatchesRead": 117,
-    "apiMatchesRead": 123,
-    "cazetvBroadcasts": 23,
-    "reconciled": 20,
+    "guideMatchesRead": 122,
+    "apiMatchesRead": 133,
+    "cazetvBroadcasts": 22,
+    "reconciled": 19,
     "guideOnly": 3,
-    "teamsWithCrest": 45,
-    "teamsShown": 46
+    "teamsWithCrest": 43,
+    "teamsShown": 44
   },
   "broadcasts": [
-    {
-      "id": "fd-558555",
-      "kickoff": "2026-10-27T19:45:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "SA",
-        "name": "Serie A",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "stage": "Rodada 9",
-      "home": {
-        "name": "Roma",
-        "fullName": "AS Roma",
-        "tla": "ROM",
-        "crest": "https://crests.football-data.org/100.png"
-      },
-      "away": {
-        "name": "Cagliari",
-        "fullName": "Cagliari Calcio",
-        "tla": "CAG",
-        "crest": "https://crests.football-data.org/104.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/roma-x-cagliari-d04f60ae69ef.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Roma x Cagliari, Serie A. Bola rolando de graça, é só dar o play.",
-        "badge": "VALE O PLAY"
-      }
-    },
     {
       "id": "fd-555065",
       "kickoff": "2026-10-28T22:30:00.000Z",
