@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T15:58:53.314Z",
+  "generatedAt": "2026-10-29T16:05:34.794Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -8,14 +8,14 @@
         {
           "page": "/jogos-hoje",
           "ok": true,
-          "parsed": 40,
-          "cazetv": 1
+          "parsed": 16,
+          "cazetv": 0
         },
         {
           "page": "/jogos-amanha",
           "ok": true,
-          "parsed": 17,
-          "cazetv": 0
+          "parsed": 21,
+          "cazetv": 4
         },
         {
           "page": "/canal/cazetv",
@@ -57,7 +57,7 @@
           "page": "/liga/campeonato-alemao-x5kmzzp7ug",
           "ok": true,
           "parsed": 10,
-          "cazetv": 1
+          "cazetv": 2
         },
         {
           "page": "/liga/campeonato-frances-5na39ifvp5",
@@ -105,7 +105,7 @@
           "page": "/liga/campeonato-italiano-91ext4vdu4",
           "ok": true,
           "parsed": 10,
-          "cazetv": 0
+          "cazetv": 1
         }
       ]
     },
@@ -118,44 +118,44 @@
   "stats": {
     "guidePagesRead": 17,
     "leaguesScanned": 13,
-    "guideMatchesRead": 122,
+    "guideMatchesRead": 107,
     "apiMatchesRead": 133,
-    "cazetvBroadcasts": 22,
-    "reconciled": 19,
-    "guideOnly": 3,
-    "teamsWithCrest": 43,
-    "teamsShown": 44
+    "cazetvBroadcasts": 24,
+    "reconciled": 22,
+    "guideOnly": 2,
+    "teamsWithCrest": 47,
+    "teamsShown": 48
   },
   "broadcasts": [
     {
-      "id": "fd-555065",
-      "kickoff": "2026-10-28T22:30:00.000Z",
+      "id": "fd-559646",
+      "kickoff": "2026-10-30T18:00:00.000Z",
       "status": "TIMED",
       "competition": {
-        "code": "BSA",
-        "name": "Brasileirão",
-        "emblem": "https://crests.football-data.org/bsa.png"
+        "code": "FL1",
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
-      "stage": "Rodada 33",
+      "stage": "Rodada 9",
       "home": {
-        "name": "Fluminense",
-        "fullName": "Fluminense FC",
-        "tla": "FLU",
-        "crest": "https://crests.football-data.org/1765.png"
+        "name": "Nice",
+        "fullName": "OGC Nice",
+        "tla": "NIC",
+        "crest": "https://crests.football-data.org/522.png"
       },
       "away": {
-        "name": "Internacional",
-        "fullName": "SC Internacional",
-        "tla": "SCI",
-        "crest": "https://crests.football-data.org/6684.png"
+        "name": "Rennes",
+        "fullName": "Stade Rennais FC 1901",
+        "tla": "REN",
+        "crest": "https://crests.football-data.org/529.png"
       },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/fluminense-x-internacional-696cf33e0f4dc.html",
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/nice-x-rennes-99520e76f1c5.html",
       "reconciliation": {
         "method": "api+guia",
         "confidence": 1
       },
       "copy": {
-        "text": "Tem Brasileirão na faixa! Fluminense x Internacional, ao vivo no YouTube.",
+        "text": "Nice recebe Rennes e você assiste com a gente, sem pagar nada.",
         "badge": "VALE O PLAY"
       }
     },
@@ -384,33 +384,34 @@
       }
     },
     {
-      "id": "fntv-nice-x-rennes-99520e76f1c5",
-      "kickoff": "2026-10-31T16:15:00.000Z",
-      "status": null,
+      "id": "fd-565845",
+      "kickoff": "2026-10-31T17:30:00.000Z",
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
-        "code": "FL1",
-        "name": "Ligue 1"
+        "code": "BL1",
+        "name": "Bundesliga",
+        "emblem": "https://crests.football-data.org/BL1.png"
       },
-      "stage": "Rodada 9",
+      "stage": "Rodada 8",
       "home": {
-        "name": "Nice",
-        "fullName": "Nice",
-        "tla": null,
-        "crest": "https://crests.football-data.org/522.png"
+        "name": "Bayern",
+        "fullName": "FC Bayern München",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/5.png"
       },
       "away": {
-        "name": "Rennes",
-        "fullName": "Rennes",
-        "tla": null,
-        "crest": "https://crests.football-data.org/529.png"
+        "name": "Borussia Dortmund",
+        "fullName": "Borussia Dortmund",
+        "tla": "BVB",
+        "crest": "https://crests.football-data.org/4.png"
       },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/nice-x-rennes-99520e76f1c5.html",
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/bayern-x-borussia-dortmund-df93408f74bb.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
-        "text": "Separa o lanche: Nice e Rennes se enfrentam e a Cazé transmite ao vivo.",
+        "text": "Bayern x Borussia Dortmund, Bundesliga. Bola rolando de graça, é só dar o play.",
         "badge": "VALE O PLAY"
       }
     },
@@ -734,6 +735,38 @@
       }
     },
     {
+      "id": "fd-558547",
+      "kickoff": "2026-11-01T19:45:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "SA",
+        "name": "Serie A",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "stage": "Rodada 10",
+      "home": {
+        "name": "Juventus",
+        "fullName": "Juventus FC",
+        "tla": "JUV",
+        "crest": "https://crests.football-data.org/109.png"
+      },
+      "away": {
+        "name": "Napoli",
+        "fullName": "SSC Napoli",
+        "tla": "NAP",
+        "crest": "https://crests.football-data.org/113.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/juventus-x-napoli-a9ee7646dc06.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Separa o lanche: Juventus e Napoli se enfrentam e a Cazé transmite ao vivo.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
       "id": "fd-564729",
       "kickoff": "2026-11-01T20:00:00.000Z",
       "status": "TIMED",
@@ -794,6 +827,38 @@
       },
       "copy": {
         "text": "Tem LaLiga na faixa! Deportivo La Coruna x Osasuna, ao vivo no YouTube.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-555070",
+      "kickoff": "2026-11-04T22:30:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "BSA",
+        "name": "Brasileirão",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "stage": "Rodada 34",
+      "home": {
+        "name": "Athletico PR",
+        "fullName": "CA Paranaense",
+        "tla": "CAP",
+        "crest": "https://crests.football-data.org/1768.png"
+      },
+      "away": {
+        "name": "Vasco",
+        "fullName": "CR Vasco da Gama",
+        "tla": "VAS",
+        "crest": "https://crests.football-data.org/1780.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/athletico-pr-x-vasco-696cf33e53cb8.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Tem Brasileirão na faixa! Athletico PR x Vasco, ao vivo no YouTube.",
         "badge": "VALE O PLAY"
       }
     },
