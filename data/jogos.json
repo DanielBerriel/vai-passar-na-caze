@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T16:05:34.794Z",
+  "generatedAt": "2026-10-30T15:54:29.070Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -8,14 +8,14 @@
         {
           "page": "/jogos-hoje",
           "ok": true,
-          "parsed": 16,
-          "cazetv": 0
+          "parsed": 21,
+          "cazetv": 4
         },
         {
           "page": "/jogos-amanha",
           "ok": true,
-          "parsed": 21,
-          "cazetv": 4
+          "parsed": 57,
+          "cazetv": 8
         },
         {
           "page": "/canal/cazetv",
@@ -118,12 +118,12 @@
   "stats": {
     "guidePagesRead": 17,
     "leaguesScanned": 13,
-    "guideMatchesRead": 107,
-    "apiMatchesRead": 133,
+    "guideMatchesRead": 130,
+    "apiMatchesRead": 135,
     "cazetvBroadcasts": 24,
-    "reconciled": 22,
-    "guideOnly": 2,
-    "teamsWithCrest": 47,
+    "reconciled": 24,
+    "guideOnly": 0,
+    "teamsWithCrest": 48,
     "teamsShown": 48
   },
   "broadcasts": [
@@ -384,38 +384,6 @@
       }
     },
     {
-      "id": "fd-565845",
-      "kickoff": "2026-10-31T17:30:00.000Z",
-      "status": "TIMED",
-      "competition": {
-        "code": "BL1",
-        "name": "Bundesliga",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "stage": "Rodada 8",
-      "home": {
-        "name": "Bayern",
-        "fullName": "FC Bayern München",
-        "tla": "FCB",
-        "crest": "https://crests.football-data.org/5.png"
-      },
-      "away": {
-        "name": "Borussia Dortmund",
-        "fullName": "Borussia Dortmund",
-        "tla": "BVB",
-        "crest": "https://crests.football-data.org/4.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/bayern-x-borussia-dortmund-df93408f74bb.html",
-      "reconciliation": {
-        "method": "api+guia",
-        "confidence": 1
-      },
-      "copy": {
-        "text": "Bayern x Borussia Dortmund, Bundesliga. Bola rolando de graça, é só dar o play.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
       "id": "fd-564736",
       "kickoff": "2026-10-31T17:30:00.000Z",
       "status": "TIMED",
@@ -448,6 +416,38 @@
       }
     },
     {
+      "id": "fd-565845",
+      "kickoff": "2026-10-31T17:30:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "BL1",
+        "name": "Bundesliga",
+        "emblem": "https://crests.football-data.org/BL1.png"
+      },
+      "stage": "Rodada 8",
+      "home": {
+        "name": "Bayern",
+        "fullName": "FC Bayern München",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/5.png"
+      },
+      "away": {
+        "name": "Borussia Dortmund",
+        "fullName": "Borussia Dortmund",
+        "tla": "BVB",
+        "crest": "https://crests.football-data.org/4.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/bayern-x-borussia-dortmund-df93408f74bb.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 1
+      },
+      "copy": {
+        "text": "Bayern x Borussia Dortmund, Bundesliga. Bola rolando de graça, é só dar o play.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
       "id": "fd-559643",
       "kickoff": "2026-10-31T19:45:00.000Z",
       "status": "TIMED",
@@ -476,37 +476,6 @@
       },
       "copy": {
         "text": "Tem Ligue 1 na faixa! Estac Troyes x Le Mans, ao vivo no YouTube.",
-        "badge": "VALE O PLAY"
-      }
-    },
-    {
-      "id": "fntv-lyon-x-angers-e902d0fcca46",
-      "kickoff": "2026-10-31T19:45:00.000Z",
-      "status": null,
-      "competition": {
-        "emblem": null,
-        "code": "FL1",
-        "name": "Ligue 1"
-      },
-      "stage": "Rodada 9",
-      "home": {
-        "name": "Lyon",
-        "fullName": "Lyon",
-        "tla": null,
-        "crest": null
-      },
-      "away": {
-        "name": "Angers",
-        "fullName": "Angers",
-        "tla": null,
-        "crest": "https://crests.football-data.org/532.png"
-      },
-      "guideUrl": "https://www.futebolnatv.com.br/aovivo/lyon-x-angers-e902d0fcca46.html",
-      "reconciliation": {
-        "method": "guia"
-      },
-      "copy": {
-        "text": "Lyon recebe Angers e você assiste com a gente, sem pagar nada.",
         "badge": "VALE O PLAY"
       }
     },
@@ -667,6 +636,38 @@
       },
       "copy": {
         "text": "Tem Ligue 1 na faixa! Paris FC x Monaco, ao vivo no YouTube.",
+        "badge": "VALE O PLAY"
+      }
+    },
+    {
+      "id": "fd-559640",
+      "kickoff": "2026-11-01T16:15:00.000Z",
+      "status": "TIMED",
+      "competition": {
+        "code": "FL1",
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "stage": "Rodada 9",
+      "home": {
+        "name": "Lyon",
+        "fullName": "Olympique Lyonnais",
+        "tla": "LYO",
+        "crest": "https://crests.football-data.org/523.png"
+      },
+      "away": {
+        "name": "Angers",
+        "fullName": "Angers SCO",
+        "tla": "ANG",
+        "crest": "https://crests.football-data.org/532.png"
+      },
+      "guideUrl": "https://www.futebolnatv.com.br/aovivo/lyon-x-angers-e902d0fcca46.html",
+      "reconciliation": {
+        "method": "api+guia",
+        "confidence": 0.9
+      },
+      "copy": {
+        "text": "Separa o lanche: Lyon e Angers se enfrentam e a Cazé transmite ao vivo.",
         "badge": "VALE O PLAY"
       }
     },
@@ -863,30 +864,31 @@
       }
     },
     {
-      "id": "fntv-toulouse-x-strasbourg-17ff0659e82b",
+      "id": "fd-559638",
       "kickoff": "2026-11-06T19:45:00.000Z",
-      "status": null,
+      "status": "TIMED",
       "competition": {
-        "emblem": null,
         "code": "FL1",
-        "name": "Ligue 1"
+        "name": "Ligue 1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
       "stage": "Rodada 10",
       "home": {
         "name": "Toulouse",
-        "fullName": "Toulouse",
-        "tla": null,
+        "fullName": "Toulouse FC",
+        "tla": "TOU",
         "crest": "https://crests.football-data.org/511.png"
       },
       "away": {
         "name": "Strasbourg",
-        "fullName": "Strasbourg",
-        "tla": null,
+        "fullName": "RC Strasbourg Alsace",
+        "tla": "RC ",
         "crest": "https://crests.football-data.org/576.png"
       },
       "guideUrl": "https://www.futebolnatv.com.br/aovivo/toulouse-x-strasbourg-17ff0659e82b.html",
       "reconciliation": {
-        "method": "guia"
+        "method": "api+guia",
+        "confidence": 1
       },
       "copy": {
         "text": "Toulouse recebe Strasbourg e você assiste com a gente, sem pagar nada.",
