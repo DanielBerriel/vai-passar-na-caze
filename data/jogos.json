@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T17:04:57.055Z",
+  "generatedAt": "2026-11-12T17:33:36.508Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -25,75 +25,8 @@
         },
         {
           "page": "/canal/cazetv/direitos",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/brasileirao-serie-a-ne9wa6elab",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/copa-do-mundo-6cjkjgnl3v",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/uefa-europa-league-9q40bjxdyw",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/uefa-conference-league-jojp46ek60",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/campeonato-alemao-x5kmzzp7ug",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/campeonato-frances-5na39ifvp5",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/super-copa-da-franca-12xeirjuqp",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/supercopa-da-italia-llkw3l5sn1",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/copa-italia-xczd3m0l2v",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/campeonato-paulista-d4tpdfyqki",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
-        },
-        {
-          "page": "/liga/campeonato-espanhol-u62s3h464c",
-          "ok": true,
-          "parsed": 0,
-          "cazetv": 0
+          "ok": false,
+          "error": "fetch failed"
         },
         {
           "page": "/liga/campeonato-ingles-diegw7eeiu",
@@ -116,10 +49,10 @@
     }
   },
   "stats": {
-    "guidePagesRead": 17,
-    "leaguesScanned": 13,
+    "guidePagesRead": 5,
+    "leaguesScanned": 2,
     "guideMatchesRead": 0,
-    "apiMatchesRead": 6,
+    "apiMatchesRead": 10,
     "cazetvBroadcasts": 0,
     "reconciled": 0,
     "guideOnly": 0,
