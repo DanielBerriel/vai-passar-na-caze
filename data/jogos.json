@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T16:18:15.707Z",
+  "generatedAt": "2026-11-16T19:33:15.171Z",
   "timeZone": "America/Sao_Paulo",
   "sources": {
     "guide": {
@@ -119,7 +119,7 @@
     "guidePagesRead": 17,
     "leaguesScanned": 13,
     "guideMatchesRead": 0,
-    "apiMatchesRead": 83,
+    "apiMatchesRead": 87,
     "cazetvBroadcasts": 0,
     "reconciled": 0,
     "guideOnly": 0,
